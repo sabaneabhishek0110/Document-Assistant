@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mht cet form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/mht_cet_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar vode -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">MHT CET</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-MHT_CET-exam">What is the Eligibility
+                            criteria for MHT CET?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-MHT_CET-enrollment-form">What are the
+                            documents
+                            required for filling MHT CET form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-jeemains-form">What is the procedure of
+                            filling
+                            MHT CET form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-MHT_CET-exam" class="contents inner_padding">
+                <h4>MHT CET Eligibility:</h4>
+                <ul class="ulcontents">
+                    <li>
+                        <p> To apply for the MHT CET exam, the candidates must meet the below-listed eligibility
+                            criteria.
+                        </p>
+                        <p>> Candidates must be an Indian Citizen</p>
+                        <p>> The candidate must be a resident of Maharashtra.</p>
+                        <p>> Candidates who are not residents of Maharashtra can also apply but for a limited number of
+                            seats reserved under the All India Quota.</p>
+                        <p>> Candidates must have passed or appearing in class 12 with Physic and Mathematics along with
+                            Biology/ Chemistry/ Biotechnology/ Computer Science/ IT/ Agriculture/ Engineering Graphics/
+                            Business Studies/ Technical Vocational subject or Passed Diploma in Engineering and
+                            Technology
+                        </p>
+                        <p>> Candidate must have secured at least 45% marks in class 12 (40% for reserved category).</p>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-MHT_CET-enrollment-form">
+                    What are the documents required for MHT CET form?
+                </h2>
+                <p>
+                    While filing the MHT CET enrollment form following documents are
+                    required to be mentioned by you. Namely,
+                </p>
+                <h6>For all stuedents:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>• Class 10 mark sheet
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    • Class 12 mark sheet
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>• Date of Birth proof</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>• Address proof</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>• Caste category certificate (if applicable)</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>• Domicile certificate</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>• Scanned images of photograph and signature</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>• Credit/Debit card or Internet banking details for fee payment.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-jeemains-form" dir="ltr">
+                Step-wise Process on How to Fill MHT CET Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- MHT CET Registration</h3>
+                    <p dir="ltr">
+                        The following information has to be filled in while registering.
+                    <p dir="ltr">
+                        <b>1. Personal Details:</b>
+                    <p>• Candidate’s Full Name</p>
+                    <p>• Father’s Name</p>
+                    <p>• Mother’s Name</p>
+                    <p>• Gender</p>
+                    <p>• Date of Birth</p>
+                    <p>• The region to which the candidate belongs</p>
+                    <p>• Annual Family Income</p>
+                    <p>• Mother Tongue</p>
+                    <p>• Nationality</p>
+                    </p>
+                    <p dir="ltr">
+                        <b>2. Permanent Address:</b>
+                    <p>The complete address of the candidate including the Pin Code should be filled in. The mobile
+                        number
+                        and
+                        email address should be filled during registration for further communication. </p>
+                    </p>
+                    <p dir="ltr">
+                        <b>3. Choose Password: </b>
+                    <p>A password with a length of 8 to 13 characters must be created as per the instructions given to
+                        create a
+                        password. The next step is to click on save and proceed. After which a one-time password will be
+                        sent to
+                        the registered mobile number. The one-time password should be entered in the space given and
+                        verified.
+                        Immediately after that, an application number will be generated. The application number should
+                        be
+                        saved
+                        by the candidate. </p>
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Filling Online Application form</h3>
+                    <p dir="ltr">
+                        The candidate must enter the application number and password generated to open the application
+                        form.
+                        The
+                        candidates must fill in the following details in the application form.
+                    </p>
+                    <p dir="ltr">
+                        <b>1. Domicile Details:</b> Candidates have to select their domicile- from Maharashtra or
+                        non-Maharashtra.
+                    </p>
+                    <p dir="ltr">
+                        <b>2. Category Details: </b>In this section, the candidates must fill in the following details
+                    <p>• Category of the candidate</p>
+                    <p>• The annual income of the family</p>
+                    <p>• Caste name</p>
+                    <p>• Mention if the candidate is a person will disabilities</p>
+                    <p>• Mention if the candidate wants to apply for an economically weaker section</p>
+                    </p>
+                    <p dir="ltr">
+                        <b>3. Education Details: </b>In this section, the candidate must fill in Class 10 and Class 12
+                        percentages and all the related information.
+                    </p>
+                    <p dir="ltr">
+                        <b>4. MHT CET Examination Details: </b>The candidates should then select the examination
+                        details.
+                        The
+                        candidates will be prompted to select the subject group, language preference and examination
+                        centre.
+                    </p>
+                    <p dir="ltr">
+                        <b>• Select the subject group for MHTCET: </b>The candidates must select if it is PCM/PCB or
+                        both.
+                    </p>
+                    <p dir="ltr">
+                        <b>• Select the language/medium of the question paper: </b>The candidates must select English,
+                        Marathi
+                        or Urdu.
+                    </p>
+                    <p dir="ltr">
+                        <b>• Select MHTCET examination centre:</b>The candidates can enter their preferred examination
+                        centres.
+                    </p>
+                    <p dir="ltr">
+                        After filling in all the details on the application form the candidate must click on save and
+                        proceed.
+                        The candidates can preview the details filled in on the application form and then submit it.
+                    </p>
+                    </p>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Uploading Images</h3>
+                    <p dir="ltr">
+                        Candidates also need to upload scanned images of their passport-size colour photograph and
+                        signature
+                        in
+                        the MHT CET application form. To upload the images, candidates have to click on the “Upload
+                        Photo &
+                        Signature” link at the MHT CET registration portal. The signature & photograph uploaded by the
+                        candidates must be as per the standard decided by the exam conducting authority.
+                    </p>
+                    <p dir="ltr">
+                        <b>For Uploading photograph</b>
+                    </p>
+                    <p dir="ltr">
+                        • Take your recent colour passport-size photograph. The picture should be taken against a
+                        light/white
+                        background. In case the face on the photograph is not clear, your application is liable to be
+                        rejected.
+                    </p>
+                    <p dir="ltr">
+                        • The file size of the photograph should be between 15 KB to 50 KB otherwise, the system will
+                        not
+                        accept
+                        it.
+                    </p>
+                    <p dir="ltr">
+                        • To reduce the size, crop the image of the passport-size photograph in MS Paint or any other
+                        Photo
+                        Editing Software.
+                    </p>
+                    <p dir="ltr">
+                        • Please ensure that only the full face portion is cropped and not the entire photograph.
+                    </p>
+
+                    <p dir="ltr">
+                        <b>For Uploading Signature</b>
+                    </p>
+                    <p dir="ltr">
+                        • The candidate himself/herself should sign (no capital letters) on white paper with a black ink
+                        pen.
+                    </p>
+                    <p dir="ltr">
+                        • Scan the signature in 200 dpi (dots per inch) scanner resolution settings and the file size
+                        should
+                        be between 5 KB to 20 KB in .jpg format.
+                    </p>
+                    <p dir="ltr">
+                        • To reduce the size, crop the image of the signature in MS Paint or any other Photo Editor.
+                        Please
+                        ensure that only the signature portion is cropped and not the entire A4 paper on which you have
+                        signed.
+                    </p>
+                    <p dir="ltr">
+                        • Once the photograph and signature files are uploaded by the candidate successfully, the system
+                        will show on the screen Photograph and Signature that has been uploaded. If these have been
+                        correctly uploaded, you should now move further to make the online payment.
+                    </p>
+                    <h6> <b>Document Size for MHT CET Application Form</b> </h6>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Document</th>
+                                    <th>Format</th>
+                                    <th>Size</th>
+                                </tr>
+                                <tr>
+                                    <td>Photograph</td>
+                                    <td>jpg/jpeg</td>
+                                    <td>5 KB - 50 KB</td>
+                                </tr>
+                                <tr>
+                                    <td>Signature</td>
+                                    <td>jpg/jpeg</td>
+                                    <td>5 KB - 50 KB</td>
+                                </tr>
+                                <tr>
+                                    <td>Identity Proof</td>
+                                    <td>pdf/jpg/jpeg</td>
+                                    <td>500 KB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - MHT CET Application Fee Payment</h3>
+                    <p dir="ltr">
+                        Candidates have to pay the requisite MHT CET application fee using net banking/Credit Card/Debit
+                        Card/Mobile wallets. The service charge (as applicable) has to be borne by the candidate. Every
+                        applicant must keep in mind that the MHT CET application fee is non-refundable and
+                        non-transferable
+                        under any circumstances. Candidates have to pay the application fee (tentative) mentioned below
+                        as
+                        per their category:
+                    </p>
+                    <div class="txt_center">
+                        <h3 dir="ltr">
+                            <b>MHT CET Application Fee</b>
+                        </h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>MHT-CET Groups</th>
+                                    <th>General</th>
+                                    <th>Reserved Category (Maharashtra Candidates only)</th>
+                                    <th>PWD</th>
+                                </tr>
+                                <tr>
+                                    <td>PCM </td>
+                                    <td>INR 800</td>
+                                    <td>INR 600</td>
+                                    <td>INR 600</td>
+                                </tr>
+                                <tr>
+                                    <td>PCB </td>
+                                    <td>INR 800</td>
+                                    <td>INR 600</td>
+                                    <td>INR 600/td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h4 dir="ltr">
+                        Step 5 - Confirmation Page
+                    </h4>
+                    <p dir="ltr">
+                        After the successful payment of the MHT CET application fee, a confirmation of the same is
+                        displayed
+                        on the screen. Applicants must take a printout of the confirmation page for future reference. It
+                        is
+                        advised that candidates keep safe the copy of the application form until the completion of the
+                        admission process.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/IG_ZSvOq2lE?si=rLnSvCvXTAI1I7Ir" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="https://www.youtube.com/@Careers360"
+                    target="_blank">Careers360 Youtube channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on MHT CET Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- Can I pay the application fee of MHT CET 2024 in offline mode?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No, candidates will be allowed to pay MHT CET 2024 application fee in online mode only.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is the last date for MHT CET registration 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The last date for MHT CET 2024 registration by paying a late fee of Rs 500 was March 15.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How do I make changes in the already submitted MHT CET application
+                    form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The authorities will open the MHT CET 2024 form correction facility on March 20. Candidates will
+                        be able to modify the details mentioned in the application form till March 22.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Will I be required to upload the documents of academic details?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No, candidates will need the same at the time of MHT CET counselling.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-What are the documents need to upload at the time of filling MHT CET
+                    2024 application form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Candidates must upload documents including their photograph, signature, and identity proof.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Are all the MHT CET exam centres located in Maharashtra state only?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No, there are some exam centres in Bihar, Chattisgarh, Delhi-NCR, Gujrat, Jharkhand, Karnataka,
+                        Telangana, Madhya Pradesh, Rajasthan and Uttar Pradesh depending upon the number of applicants.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Can a student outside Maharashtra fill the MHT CET application
+                    form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Yes, outsiders are allowed to apply for MHT CET 2024, provided that they fulfill the domicile
+                        criteria for admission to government colleges.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-Is MHT CET 2024 application form released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Yes, The MHT CET 2024 application form has been released on the official website.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

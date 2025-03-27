@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pan card</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+  <style>
+    body {
+      background-color: rgb(242, 242, 242);
+    }
+
+    .emphasis:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .box1:hover {
+      transform: translateY(-5px);
+    }
+
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #home {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 100px;
+      height: 300px;
+    }
+
+    #home::before {
+      background: url("/AllImages/Pan.png") no-repeat center center/cover;
+    }
+
+    .contents {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .contents li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .box2 {
+      border: 5px solid rgb(225, 235, 244);
+      background-color: rgb(225, 235, 244);
+      border-radius: 10px;
+      margin: 10px 10px;
+      padding: 5px 3px;
+    }
+
+    .image2 {
+      display: block;
+      width: 50%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .image {
+      display: block;
+
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .steps {
+      align-items: center;
+      margin: 5px 100px;
+      padding: 5px 25px;
+    }
+
+    .hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+
+    }
+
+    table {
+      width: 99%;
+      background-color: white;
+      margin-left: 3px;
+    }
+
+    .steps {
+      align-items: center;
+      box-shadow: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .steps:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DocSteps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" id="list">
+              <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                  Documents</a></li>
+              <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <h1 class="heading"> Pan Card</h1>
+  </section>
+  <section>
+    <div class="total_margin">
+      <section>
+        <div class="contents">
+          <h3>CONTENTS:</h3>
+          <ul class="ulcontents">
+            <li>
+              <a href="#voter-id-requirements">Voter ID Requirements</a>
+            </li>
+            <li>
+              <a href="#voter-id-application">Pan Card Application Process</a>
+            </li>
+            <li>
+              <a href="#voter-id-status">Check Pan Card Application Status</a>
+            </li>
+            <li>Pan Carda href="#points">Points to note before application</a>
+            </li>
+            <li>
+              <a href="#corrections">How to do corrections?</a>
+            </li>
+            <li>
+              <a href="#not">What to do if we don't recieve voter id?</a>
+            </li>
+            <li>
+              <a href="#NRI">For NRI peopele</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- documents reqired code -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-requirements">Pan Card Requirements</h2>
+          <p>
+            Before applying for a Pan Card, ensure you have the following
+            documents:
+          </p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>S No</th>Pan Cardth>Form Fields</th>
+                <th>Details Required</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Photo</td>
+                <td>One passport size photograph.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Identity proof</td>
+                <td>
+                  this could be a birth certificate, passport, driving licence,
+                  PAN Card or high school mark sheet
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Address proof</td>
+                <td>
+                  Address proof- this could be either ration card, your passport,
+                  driving license or a utility bill (phone or electricity).
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <p>These documents are necessary for the verification process.</p>
+          <hr class="hr" />
+        </div>
+      </section>
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-application">Pan Card Application Process</h2>
+          <div class="steps">
+            <p id="documents">
+
+              If you are applying for a new&nbsp;PAN card, you will have to fill in Form 49A or 49AA depending on
+              whether
+              you are an Indian citizen or a foreign citizen. Keep in mind that this is primarily for applicants who
+              don't
+              currently have a PAN card and have never applied for one.<strong> Here are the steps</strong></p>
+
+
+            <h4>&#9900; Step 1:</h4>
+            <p>Visit the&nbsp;<a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"
+                rel="nofollow" target="_blank">NSDL website's</a>&nbsp;Online PAN Application section</p>
+          </div>
+          <img title="apply online pan card"
+            src="https://static.bankbazaar.com/images/india/infographic/online-pan-card-apply-online-step-1.webp"
+            alt="apply online pan card" loading="lazy" class="image2">
+          <!-- code for step2 -->
+          <div class="steps">
+            <h4>&#9900; Step 2:</h4>
+            <p>Select your application type:&nbsp;<a href="https://www.bankbazaar.com/pan-card/pan-form49A.html">Form
+                49A</a>&nbsp;(Indian Citizens) or 49AA (Foreign Citizens) or Changes or&nbsp;<a
+                href="https://www.bankbazaar.com/pan-card/pan-card-correction.html">Correction in PAN</a>/Reprint of PAN
+              Card.</p>
+          </div>
+          <img title="Apply for Pan Card Online Step 1"
+            src="https://static.bankbazaar.com/images/india/infographic/online-pan-card-appllication-type-step-2.webp"
+            alt="Apply for Pan Card Online aplication type" loading="lazy" class="image2">
+          <!-- code for step3 -->
+          <div class="steps">
+            <h4>&#9900; Step 3:</h4>
+            <p>Select your Category. The options are: Individual, Association of Persons, Body of Individuals, Trust,
+              Limited Liability Partnerships, Firm, Government, Hindu Undivided Family, Artificial Judicial Person, and
+              Local Authority.&nbsp;&nbsp;</p>
+          </div>
+
+
+          <img title="Apply for Pan Card Online select category Step 3"
+            src="https://static.bankbazaar.com/images/india/infographic/online-pan-card-select-category-step-3.webp"
+            alt="Apply for Pan Card Online select category Step 3" loading="lazy" class="image2">
+
+
+          <!-- code for step4 -->
+          <div class="steps">
+            <h4>&#9900; Step 4:</h4>
+            <p>Fill in the Title, <strong>Last name/surname</strong>, First name, <strong>Middle Name</strong>, Date of
+              Birth/Incorporation/<strong>Formation in DD/MM/YYYY forma</strong>t, email ID, mobile number, and Captcha
+              code. Submit the form.</p>
+          </div>
+          <img title="online pan card applicant information"
+            src="https://static.bankbazaar.com/images/india/infographic/online-pan-card-select-applicant-information-step-4.webp"
+            alt="online pan card applicant information" loading="lazy" class="image2">
+
+
+          <img title="online pan card enter captcha code step5" src="https://static.bankbazaar.com/images/india/infographic/online-pan-card-select-submit-step-5.webp
+
+            " alt="online pan card enter captcha code step5" loading="lazy" class="image2">
+          <div class="steps">
+            <h4>&#9900; Step 5:</h4>
+            <p>On the next page you will receive an acknowledgement with a&nbsp;token number. <strong>Click on 'Continue
+                with&nbsp;PAN Application Form'</strong> on this page.&nbsp; &nbsp;</p>
+          </div>
+
+
+          <div class="steps">
+            <h4>&#9900; Step 6:</h4>
+            <p>You will be directed to fill in more personal details similar to Form 49A or&nbsp;<a
+                href="https://www.bankbazaar.com/pan-card/pan-form49AA.html" target="_blank">Form 49AA</a>. Input all
+              the
+              necessary information.</p>
+          </div>
+
+
+
+
+          <div class="steps">
+            <h4>&#9900; Step 7:</h4>
+            <p>Choose how you want to submit the documents. You can:<strong> a)</strong> Forward application documents
+              physically; <strong>b) </strong>Submit digitally through digital signature; c) Submit digitally through
+              e-sign.</p>
+          </div>
+
+          <div class="steps">
+            <h4>&#9900; Step 8:</h4>
+            <p>&nbsp;On the same page, indicate what documents you are submitting as proof of identity, address, and
+              date of
+              birth. Confirm the declaration, place and date of application. Review and submit the form. Make sure you
+              make
+              no mistakes.</p>
+          </div>
+
+
+
+
+          <div class="steps">
+            <h4>&#9900; Step 9:</h4>
+            <p>Click on '<strong><i>Proceed</i></strong>' and you will be taken to the payment options. Choose between
+              Demand Draft and Online Payment through Bill Desk.</p>
+          </div>
+
+          <div class="steps">
+            <h4>&#9900; Step 10:</h4>
+            <p>If you choose <strong>Demand Draft</strong>, you will have&nbsp; to make a DD before you begin the
+              application process as you have to provide the DD number, date of issue, amount, and the name of the bank
+              from
+              where the DD is generated on the portal.</p>
+          </div>
+          <div class="steps">
+            <h4>&#9900; Step 11:</h4>
+            <p>If you choose Bill Desk, you can pay through Net Banking, and Debit or&nbsp;<a
+                href="https://www.bankbazaar.com/credit-card.html" target="_blank">Credit Cards</a>.</p>
+          </div>
+          <div class="steps">
+            <h4>&#9900; Step 12:</h4>
+            <p>Click on '<strong><i>I agree to terms of service</i></strong>' and proceed to pay. The&nbsp;<a
+                href="https://www.bankbazaar.com/pan-card/pan-fees.html">PAN application fees</a>&nbsp;will vary based
+              on
+              whether you are sending documents separately to Protean e-Gov Technologies Limited or uploading them
+              online.
+            </p>
+          </div>
+          <div class="steps">
+            <h4>&#9900; Step 13:</h4>
+            <p>If you pay by using your credit card or <a href="https://www.bankbazaar.com/debit-card.html"
+                target="_blank">debit card</a><strong> or via net banking,</strong> you will receive an acknowledgment
+              receipt and payment receipt. Print the acknowledgment receipt.</p>
+          </div>
+          <div class="steps">
+            <h4>&#9900; Step 14:</h4>
+            <p>Attach two <strong>recent photographs</strong> along with the acknowledgement receipt.</p>
+          </div>
+
+          <div class="steps">
+            <h4>&#9900; Step 15:</h4>
+            <p>After payment is confirmed, send the&nbsp;<a href="/pan-card/documents-required-for-pan-card.html"
+                target="_blank">supporting documents</a>&nbsp;via post or courier to Protean e-Gov Technologies Limited.
+            </p>
+          </div>
+
+          <hr class="hr" />
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 id="applying_for_a__8" class="ui header">Applying for a PAN Card Offline</h2>
+
+        <p class="steps"><strong>Step&nbsp; 1 -</strong>&nbsp;Go to the official Protean e-Gov Technologies Limited
+          website
+          (formerly NSDL) -&nbsp;<strong>https://www.tin-nsdl.com/</strong></p>
+
+        <p class="steps"><strong>Step&nbsp; 2 -&nbsp;</strong>Under ‘<strong>Downloads’, click on ‘PAN’</strong>. A new
+          page
+          will open where you will have to click on ‘Form 49A’. If you are a non-resident individual (NRI) or a foreign
+          national, click on ‘Form 49AA’.</p>
+
+        <p class="steps"><strong>Step&nbsp; 3 -&nbsp;</strong>Download this form.</p>
+
+        <p class="steps"><strong>Step&nbsp; 4 -</strong>&nbsp;Fill in the application form.</p>
+
+        <p class="steps"><strong>Step&nbsp; 5 -&nbsp;</strong>Upload photo<strong> copies </strong>of all supporting
+          documents (elaborated in the section below) along with a passport size photograph.</p>
+
+        <p class="steps"><strong>Step&nbsp; 6 -</strong>&nbsp;You should pay a fee of <strong>Rs.110 </strong>which can
+          be
+          paid via cash or demand draft.</p>
+
+        <p class="steps"><strong>Step&nbsp; 7 -&nbsp;</strong>On your envelope, you should write '<strong>APPLICATION
+            FOR
+            PAN -N-15 DIGIT ACKNOWLEDGEMENT NUMBER'.</strong> Example, 'APPLICATION FOR PAN -- N-881010200000063').</p>
+
+        <p class="steps"><strong>Step 8 -&nbsp;</strong>Send the envelope to this address:</p>
+      </section>
+
+      <div style="display: flex; flex-direction: row; justify-content: center;">
+        <iframe style="width: 90vw; height: 70vh;" src="https://www.youtube.com/embed/eXKZAksBcIo?si=WHx09antOwy1tE8V"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="credits">
+        <p class="credits1">Credits : <a href="https://www.youtube.com/@Govtechh" target="_blank">Govtechh Youtube
+            channel</a></p> 
+      </div>
+
+      <!-- frequently asked questions -->
+      <div>
+        <div class="box2">
+          <h2 id="faqs" class="text-center" id="Frequently-asked-questions">
+            Frequently Asked Questions on Aadhar Enrollment Form
+          </h2>
+        </div>
+
+        <div class="wrapper box2 box1">
+          <h3>
+            <span class="question">Q</span>- What are the documents required for online application of PAN card?
+          </h3>
+          <div class="ans">
+            <p>
+              To apply for a PAN card online, you will need identity proof (Aadhaar card, Voter ID, passport, ration
+              card,
+              etc.) address proof (Aadhaar card, post office passbook, passport, etc.) and proof of date of birth.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>-What is the validity of my PAN Card?</h3>
+          <div class="ans">
+            <p>
+              Your PAN Card will be valid for life and you will not be required to renew your PAN Card. However, in case
+              of
+              any change in information, you will have to go through the process of changing the information on your PAN
+              Card by filling out the form for ‘Request for New PAN Card Or/ And Changes or Correction in PAN Data’.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- How long will it take for me to get my PAN card after submitting my
+            application?
+          </h3>
+          <div class="ans">
+            <p>
+              Nowadays, it only takes 2 days after the submission of the application to get your PAN card.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- Can a minor apply for a PAN Card?</h3>
+          <div class="ans">
+            <p>
+              Yes, a minor can apply for a PAN Card under Section 160 of the IT Act, 1961. A person who is a
+              non-resident,
+              lunatic, or court of ward can also apply for a PAN Card. However, in this case they will have to be
+              represented through a Representative Assessee who will apply for a PAN Card on the behalf of the
+              applicant.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>-Are there any charges I will be required to pay while applying for a PAN
+            Card?
+          </h3>
+          <div class="ans">
+            <p>
+              Yes, you will have to make a payment of Rs.93+ GST while applying for a PAN Card if you are a resident of
+              India. If your PAN Card is to be dispatched outside India then you will have to make a payment of Rs.864
+              (Rs.93 + Rs.771 as dispatch fees).
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- Can a student apply for a PAN card?
+          </h3>
+          <div class="ans">
+            <p>
+              Yes, if the student is above the age of 18 years, then they can apply for a PAN card.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

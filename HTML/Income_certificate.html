@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Certificate</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+  <style>
+    body {
+      background-color: rgb(242, 242, 242);
+    }
+
+    .emphasis:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .box1:hover {
+      transform: translateY(-5px);
+    }
+
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #home {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 100px;
+      height: 300px;
+    }
+
+    #home::before {
+      background: url("/AllImages/Income_Certificate.png") no-repeat center/cover;
+    }
+
+    .contents {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .contents li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .box2 {
+      border: 5px solid rgb(225, 235, 244);
+      background-color: rgb(225, 235, 244);
+      border-radius: 10px;
+      margin: 10px 10px;
+      padding: 5px 3px;
+    }
+
+    .image2 {
+      display: block;
+      width: 50%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .image {
+      display: block;
+
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .steps {
+      align-items: center;
+      margin: 5px 100px;
+      padding: 5px 25px;
+    }
+
+    .hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+
+    }
+
+    table {
+      width: 99%;
+      background-color: white;
+      margin-left: 3px;
+    }
+
+    .steps {
+      align-items: center;
+      box-shadow: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .steps:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DocSteps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" id="list">
+              <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                  Documents</a></li>
+              <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <h1 class="heading">Income Certificate</h1>
+  </section>
+  <section>
+    <div class="contents">
+      <h3>CONTENTS:</h3>
+      <ul class="ulcontents">
+        <li>
+          <a href="#voter-id-requirements">Income Certificate Requirements</a>
+        </li>
+        <li>
+          <a href="#voter-id-application">Income Certificate Application Process</a>
+        </li>
+        <li>
+          <a href="#voter-id-status">Check Income Certificate Application Status</a>
+        </li>
+
+        <li>
+          <a href="#faqs">Frequently Asked Questions</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- documents reqired code -->
+  <section>
+    <div class="col-md-12">
+      <h2 id="voter-id-requirements">Income Certificate Requirements</h2>
+      <p>
+        Before applying for a Income Ceertificate, ensure you have the following
+        documents:
+      </p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>S No</th>
+            <th>Form Fields</th>
+            <th>Details Required</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Photo</td>
+            <td>One passport size photograph.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Identity proof</td>
+            <td>
+              this could be a birth certificate, passport, driving licence,
+              PAN Card or high school mark sheet
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Address proof</td>
+            <td>
+              Address proof- this could be either ration card, your passport,
+              driving license or a utility bill (phone or electricity).
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Age proof</td>
+            <td>
+              Applicant Birth Certificate /School leaving Certificate/ Pan Card.
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Proof of income</td>
+            <td>
+              Form 16 if salaried, income tax return statement, salary slip.
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <p>These documents are necessary for the verification process.</p>
+      <hr class="hr" />
+    </div>
+  </section>
+
+
+  <section>
+    <div class="col-md-12">
+      <h2 id="voter-id-application">Income Certificate Application Process</h2>
+      <div class="steps">
+        <p id="documents">
+          Here are the detailed steps to apply for Income Certificate card online:
+        </p>
+
+        <h4>&#9900; Step 1:</h4>
+        <p> Visit the official website of the Maharashtra Government.</p>
+      </div>
+      <!-- code for step2 -->
+      <div class="steps">
+        <h4>&#9900; Step 2:</h4>
+        <p> Click on <strong>“New User”</strong> which is visible on the home page of the portal.</p>
+      </div>
+      <img src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005843/Step-111.png" class="image2"
+        alt="">
+
+
+      <!-- code for step3 -->
+      <div class="steps">
+        <h4>&#9900; Step 3:</h4>
+        <p>Select <strong>“Income Certificate”</strong> option from the main menu.</p>
+      </div>
+
+      <img src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005843/step-1111.png" class="image2"
+        alt="">
+
+      <!-- code for step4 -->
+      <div class="steps">
+        <h4>&#9900; Step 4:</h4>
+        <p>On the next page, the application form for Income Certificate appears.</p>
+      </div>
+
+      <div class="steps">
+        <h4>&#9900; Step 5:</h4>
+        <p>Fill the form with required details and attach the scanned documents.</p>
+      </div>
+
+      <div class="steps">
+        <h4>&#9900; Step 6:</h4>
+        <p>Finally click on <strong>“Submit”</strong> for successful registration.</p>
+
+        <p>Note: After submitting the application form of income certificate, you will be provided with an
+          acknowledgement number to track your income certificate status.</p>
+      </div>
+
+
+
+      <hr class="hr" />
+    </div>
+  </section>
+
+
+
+  <!-- how to track status -->
+  <section>
+    <h2 id="voter-id-status">
+      How to Track Status of Income Certificate?<span id="procedure"></span>
+    </h2>
+    <div class="steps">
+      <h4>&#9900; Step 1:</h4>
+      <p>To check the status of Maharashtra income certificate application status the applicant has to revisit the
+        official portal.</p>
+    </div>
+    <div class="steps">
+      <h4>&#9900; Step 2:</h4>
+      <p style="-left: 0px" dir="ltr" class="steps">
+      <p> Click on <strong>” Track Your Application”</strong> and enter your application ID.</p>
+      </p>
+      <p> Select<strong> ‘Go</strong>‘ and the status of the application saved will be displayed.</p>
+
+    </div>
+
+
+
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+      <iframe style="width: 90vw; height: 70vh;" src="https://www.youtube.com/embed/uvZ86Syj4pI?si=1wz9ZLdMrAVZVGTL"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="credits">
+      <p class="credits1">Credits : <a href="https://www.youtube.com/@Govtechh" target="_blank">Govtechh Youtube
+          channel</a></p> 
+    </div>
+
+    <!-- frequently asked questions -->
+    <div>
+      <div class="box2">
+        <h2 id="faqs" class="text-center" id="Frequently-asked-questions">
+          Frequently Asked Questions on Aadhar Enrollment Form
+        </h2>
+      </div>
+
+      <div class="wrapper box2 box1">
+        <h3>
+          <span class="question">Q</span>- What is the Eligiblity criteria?
+        </h3>
+        <div class="ans">
+          <p>
+            Any individual who is employed and a resident of Maharashtra is eligible to apply for a Maharashtra income
+            certificate.
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper box1 box2">
+        <h3><span class="question">Q</span>- What is the use of income certificate?</h3>
+        <div class="ans">
+          <p>
+            Income certificate is useful for various purposes like obtaining admissions in schools, getting a loan for
+            education, saving your income from income tax, as well as to get various other certificates like Aadhar
+            card, ration card, domicile certificate, caste certificate, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="wrapper box1 box2">
+        <h3>
+          <span class="question">Q</span>- What are the documents required?
+        </h3>
+        <div class="ans">
+          <ul>
+            <li><strong>Age Proof:</strong> Applicant Birth Certificate /School leaving Certificate/ Pan Card.</li>
+            <li><strong>Address Proof:</strong> Ration Card / Voter ID /Passport/ Driving License /Electricity bill/
+              Water bill / property tax receipt.</li>
+            <li><strong>Photograph:</strong> Applicant passport size photograph.</li>
+            <li><strong>Identity Proof:</strong> Aadhar Card / Voter ID /Driving License.</li>
+            <li><strong>Proof of Income:</strong> Form 16 if salaried, <a
+                href="https://www.indiafilings.com/business-tax-return-filing">income tax return statement</a>, salary
+              slip.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrapper box1 box2">
+        <h3><span class="question">Q</span>-Is a bank statement a Proof of income</h3>
+        <div class="ans">
+          <p>
+            A bank statement is only supporting financial evidence but not a proof of income by itself.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="wrapper box1 box2">
+        <h3>
+          <span class="question">Q</span>- Who can issue a income certificate?
+        </h3>
+        <div class="ans">
+          <p>This will depend on the state or district, but here are some government bodies that can issue an income
+            certificate:</p>
+          <ul>
+            <li>Village Tehsildars&nbsp;</li>
+            <li>District Magistrate</li>
+            <li>Sub-divisional Magistrates</li>
+            <li>Deputy Commissioner</li>
+            <li>District Collector</li>
+            <li>Revenue Circle Officers</li>
+            <li>District authorities</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrapper box1 box2">
+        <h3>
+          <span class="question">Q</span>- Is income certificate and income tax certificate the same?
+        </h3>
+        <div class="ans">
+          <p>
+            No, the income certificate and income tax certificate are both different. The former is a government-issued
+            financial document that proves the annual income of the individual or the family. While the latter is the
+            form that the company or the individual files with the government to state their annual income, tax
+            deduction, savings, and tax owed.
+
+
+          </p>
+        </div>
+      </div>
+      <div class="wrapper box1 box2">
+        <h3>
+          <span class="question">Q</span>- What is the minimum income for income certificate in India?
+        </h3>
+        <div class="ans">
+          <p>
+            The minimum income required to apply for income certificate in India is equal to or less than Rs.4.50 lakh.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

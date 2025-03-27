@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VITEEE Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/viteee_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">VITEEE</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-VITEEE-exam">What is the Eligibility
+                            criteria for VITEEE Exam?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-VITEEE-enrollment-form">What are the
+                            documents
+                            required for filling VITEEE Exam form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-VITEEE-form">What is the procedure of
+                            filling VITEEE Exam form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-VITEEE-exam" class="contents inner_padding">
+                <h4>VITEEE Exam Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <!-- <li> -->
+                    <p>> The date of birth as recorded in the High School / SSC / X Certificate will be considered
+                        authentic.
+                        •
+
+                    </p>
+                    <p>> Applicants applying for the Undergraduate Engineering admission should have secured minimum
+                        aggregate of 60% in Physics, Chemistry, and Mathematics/Biology in the qualifying examination
+                        (+2/Intermediate).</p>
+                    <p>> Applicants applying for the Undergraduate Engineering admission should have passed with minimum
+                        aggregate of 50% in Physics, Chemistry, and Mathematics/Biology in the qualifying examination
+                        (+2/Intermediate) for the following categories:
+                    <p class="margin_to_left">
+                        o Applicants belonging to SC/ST
+                    </p>
+                    <p class="margin_to_left">
+                        o Applicants hailing from Jammu and Kashmir/ Ladakh and the Northeastern states of Arunachal
+                        Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim and Tripura. Certificate to prove
+                        community / nativity should be produced at the time of counselling, failing which they will not
+                        be considered for admission.
+                    </p>
+
+                    </p>
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-VITEEE-enrollment-form">
+                    Documents Required for VITEEE Registration
+                </h2>
+                <p dir="ltr">While registering for VITEEE, candidates need some documents to be referred to fill in
+                    certain details. Such documents have been pointed out below:</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    • Educational documents (like mark sheets of class 10 and 12).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>• Category certificates (for candidates belonging to reserved categories).</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>• Scanned image of photograph and signature.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>• Credit card/ debit card or net banking details.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>• Valid email address and mobile number</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-VITEEE-form" class="margin_to_heading" dir="ltr">
+                Steps to Fill Online VITEEE Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- VITEEE Registration</h3>
+                    <p dir="ltr">
+                        Candidates will first have to register themselves for VITEEE by submitting the following
+                        details:
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Candidate’s name
+                        </p>
+                        <p dir="ltr">
+                            • Date of birth
+                        </p>
+                        <p dir="ltr">
+                            • Nationality
+                        </p>
+                        <p dir="ltr">
+                            • Candidate’s gender
+                        </p>
+                        <p dir="ltr">
+                            • Contact number (mobile number)
+                        </p>
+                        <p dir="ltr">
+                            • Candidate’s email address
+                        </p>
+                    </div>
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/presets/860X466/articles/uploads/froala_editor/images/2021/6/22/1624361637235.png">
+                    </div>
+
+                    <p dir="ltr">
+                        After submitting the above-mentioned details in the application form for VITEEE 2024, candidates
+                        will receive a text on their mobile and an email for confirmation which will be followed by the
+                        VITEEE login ID and password for further login.
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Filling VITEEE Application Form</h3>
+                    <p dir="ltr">
+                        Upon successful VIT registration 2024, candidates will have to log in using their email ID and
+                        password. Herein, candidates have to fill in VITEEE registration details such as personal and
+                        academic details like the name of the board of qualifying examination, year of passing, etc.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/presets/860X481/articles/uploads/froala_editor/images/2021/6/22/1624361636769.png">
+                    </div>
+
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/presets/1366X1271/articles/uploads/froala_editor/images/2021/6/22/1624361635501.png">
+                    </div>
+
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/presets/1366X1077/articles/uploads/froala_editor/images/2021/6/22/1624361634599.png">
+                    </div>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Payment of VIT Application Fee</h3>
+                    <p dir="ltr">
+                        In the next step, candidates have to pay the VITEEE application form fees of Rs 1350. Payment
+                        can be done in online mode through credit card/ debit card or net banking. Candidates should not
+                        forget to keep a note of the transaction ID for future reference.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/presets/1350X561/articles/uploads/froala_editor/images/2021/6/22/1624361634945.png">
+                    </div>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Uploading Documents in VITEEE Form </h3>
+                    <p dir="ltr">
+                        Candidates are required to upload certain documents while filling VITEEE application form as
+                        shown in the image below with specifications.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/articles/uploads/froala_editor/images/2021/6/22/1624361633021.png">
+                    </div>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">
+                        Step 5 - Final VITEEE Application Form Submission
+                    </h3>
+                    <p dir="ltr">
+                        After filling in the VITEEE application form, paying the application fee and uploading the
+                        requisite documents is the necessary step. Candidates will have to finally submit the VIT
+                        application form. It is advised to download the filled-in application form of VITEEE.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="VITEEE sign in " class="fr-fic fr-dii image_format"
+                            src="https://cache.careers360.mobi/media/articles/uploads/froala_editor/images/2021/6/22/1624361632449.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 dir="ltr" class="margin_to_heading">International Student Applications</h3>
+            <div class="txt_center inner_padding">
+                <p dir="ltr">
+                    VIT University welcomes applications from both foreign nationals and non-resident Indians (NRIs) for
+                    admission. It is important for these candidates to carefully review the VITEEE eligibility criteria
+                    provided on the official website before proceeding with registration. Selection of candidates in
+                    this category is determined by their merit, which is assessed based on their marks or grades
+                    obtained in the qualifying examination, along with the availability of seats.
+                </p>
+                <p dir="ltr">
+                    Foreign nationals and Overseas Citizens of India (OCIs) studying in any country are eligible for
+                    admission under the foreign category. Moreover, the sponsor of these candidates is required to pay
+                    the fees in US dollars. For applicants from overseas, the VITEEE application fee is USD 50. This
+                    streamlined process ensures that foreign and NRI candidates have an opportunity to pursue education
+                    at VIT University.
+                </p>
+            </div>
+        </section>
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/ocy0S_9sFG0?si=oFaBkcRLvHBM-Jx-" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="https://www.youtube.com/@Careers360" target="_blank">Careers360
+                    Youtube
+                    channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on VITEEE Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- When will the VITEEE 2024 application form be released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        VITEEE application form 2024 has been released on November 1, 2024.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I access VITEEE 2024 registration form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        VITEEE registration form 2024 is available in online mode. For filling the online form,
+                        candidates have to visit viteee.vit.ac.in.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What are the documents required while filling the VITEEE
+                    application form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        While filling the VITEEE 2024 application form, candidates have to upload scanned images of
+                        their photograph and signature as per the specifications provided by the authorities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is VIT application form 2024 last date?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The last date for submitting the VIT application form 2024 is April 10, 2024.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-Is VITEEE 2024 exam online or offline?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The mode of the VITEEE exam 2024 will be online mode.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

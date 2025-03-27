@@ -1,0 +1,151 @@
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+.emphasis:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.box1 {
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.box1:hover {
+    transform: translateY(-5px);
+}
+
+.box2 {
+    border: 5px solid rgb(225, 235, 244);
+    background-color: rgb(225, 235, 244);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 5px 3px;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 100px;
+    height: 300px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 357px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.55;
+}
+
+#home {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heading {
+    font-size: 6rem;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem;
+        /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+    .heading {
+        font-size: 3rem;
+        /* Adjust the font size for even smaller screens */
+    }
+}
+
+
+.contents {
+    border: 1px solid black;
+    border-radius: 10px;
+    /* margin: 5px; */
+    background-color: white;
+}
+
+.contents li a {
+    text-decoration: none;
+    color: black;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+}
+
+.txt_center {
+    align-items: center;
+    box-shadow: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.txt_center:hover {
+    transform: scale(1.01);
+}
+
+.image_format {
+    display: block;
+    margin: 5px auto;
+    box-shadow: 11px;
+}
+
+.step-img img {
+    width: 70vw;
+}
+
+.total_margin {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.credits {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: rgb(235, 232, 232);
+}
+
+.credits a {
+    text-decoration: none;
+    color: black;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+    color: blue;
+}

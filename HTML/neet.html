@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEET Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/neet_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">NEET</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-NEET-exam">What is the Eligibility
+                            criteria for NEET?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-NEET-enrollment-form">What are the
+                            documents
+                            required for filling NEET form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-NEET-form">What is the procedure of
+                            filling NEET form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-NEET-exam" class="contents inner_padding">
+                <h4>NEET Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <!-- <div class="table-responsive">
+                        <div class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Parameters</th>
+                                    <th>Details</th>
+                                </tr>
+                                <tr>
+                                    <td>Qualifying exam for NEET 2024</td>
+                                    <td>
+                                        <p>Candidates must have passed 10+2 or equivalent with Physics, Chemistry,
+                                            Biology/Biotechnology, and English as core subjects from a recognised board.
+                                        </p>
+                                        <p>Class 12 or equivalent appearing aspirants are also eligible to apply for
+                                            NEET.
+                                        </p>
+                                        <p>Candidates studying Biology as an additional subject after passing class 12
+                                            are
+                                            also eligible.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>NEET eligibility marks 2024</td>
+                                    <td>
+                                        <p>The class 12 percentage required for NEET 2024 exam is separate for each
+                                            category
+                                            and can be listed as under. NEET eligibility marks in 12th to be considered
+                                            are
+                                            aggregate marks only for PCB subjects.
+                                        <p>UR - 50%</p>
+                                        <p>OBC/SC/ST - 40%</p>
+                                        <p>PWD - 40%</p>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maximum Number of Attempts for NTA NEET</td>
+                                    <td>
+                                        <p>There are no restrictions on the number of NEET 2024 attempt limit.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </div> -->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Parameters</th>
+                                    <th>Details</th>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>Qualifying exam for NEET 2024</td>
+                                    <td>
+                                        <p>• Candidates must have passed 10+2 or equivalent with Physics, Chemistry,
+                                            Biology/Biotechnology, and English as core subjects from a recognised board.
+                                        </p>
+                                        <p>•Class 12 or equivalent appearing aspirants are also eligible to apply for
+                                            NEET.
+                                        </p>
+                                        <p>• Candidates studying Biology as an additional subject after passing class 12
+                                            are
+                                            also eligible.</p>
+                                    </td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                    <td>NEET eligibility marks 2024</td>
+                                    <td>
+                                        <p>The class 12 percentage required for NEET 2024 exam is separate for each
+                                            category
+                                            and can be listed as under. NEET eligibility marks in 12th to be considered
+                                            are
+                                            aggregate marks only for PCB subjects.
+                                            <!-- <div class="margin_to_left"> -->
+                                        <p>• UR - 50%</p>
+                                        <p>• OBC/SC/ST - 40%</p>
+                                        <p>• PWD - 40%</p>
+                                        <!-- </div> -->
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maximum Number of Attempts for NTA NEET</td>
+                                    <td>
+                                        <p>There are no restrictions on the number of NEET 2024 attempt limit.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-NEET-enrollment-form">
+                    Documents Required for NEET Registration form?
+                </h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    • Scanned Photograph of candidate
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>• Scanned Signature of candidate</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>• Scan of thumb impression of candidate</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>• A valid mobile number</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>• Class 10, 12 marks and percentage</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>• Valid government-authorised ID proof</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>• Credit card/ Debit card/ Net banking credentials
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>• Citizenship certificate of candidate</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>• Embassy Certificate</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>• Printout of the confirmation page</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>• Receipt for the payment of application fees</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>• 6 to 8 copies of the uploaded photograph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-NEET-form" class="margin_to_heading" dir="ltr">
+                Step-wise Process on How to Fill NEET(UG) Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- Registration </h3>
+                    <p dir="ltr">
+                        Candidates must visit the official new NEET UG website i.e., neet.ntaonline.in.
+                    </p>
+                    <p dir="ltr">
+                        On the homepage, students will find the link that reads "Fill Registration Form” or the
+                        invitation for NEET UG 2024 Registration -- click on that.
+                    </p>
+                    <p dir="ltr">
+                        Now, the candidate needs to click on 'New Registration' and read the instructions.
+                    </p>
+                    <p dir="ltr">
+                        Now, candidates have to enter the following details in their NEET UG form:
+                    <div class="margin_to_left">
+                        <p>• Candidate’s Name</p>
+                        <p>• Mother’s name</p>
+                        <p>• Father’s name</p>
+                        <p>• Date of birth</p>
+                        <p>• Category</p>
+                        <p>• Gender</p>
+                        <p>• Nationality</p>
+                        <p>• Persons with Disability</p>
+                        <p>• Identification Type</p>
+                        <p>• Identification Number</p>
+                        <p>• Mobile number</p>
+                        <p>• Email Id</p>
+                        <p>• Password</p>
+                        <p>• Enter Security Pin</p>
+                    </div>
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Apply online for NEET </h3>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            → Candidates need to click on 'click here to login'.
+                        </p>
+                        <p dir="ltr">
+                            → Candidates need to log in using their application number and the given password.
+                        </p>
+                        <p dir="ltr">
+                            → You will be able to access the NEET application form.
+                        </p>
+                        <p dir="ltr">
+                            → The application will be pre-filled with the information you provide at registration; it
+                            cannot be modified.
+                        </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>The form is further divided into 12 sections which contains the following details : </b>
+                    </p>
+                    <p dir="ltr">
+                        The many NEET application form 2024 sections are listed here, along with the information that
+                        must be entered in each section. Take a look here:
+                    </p>
+                    <p dir="ltr">
+                        <b>Personal details : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Name of candidate
+                        </p>
+                        <p dir="ltr">
+                            • Parents name of candidate
+                        </p>
+                        <p dir="ltr">
+                            • Candidate's gender
+                        </p>
+                        <p dir="ltr">
+                            • Aspirant's nationality
+                        </p>
+                        <p dir="ltr">
+                            • ID type and number
+                        </p>
+                        <p dir="ltr">
+                            • Whether candidates suffering from diabetes
+                        </p>
+                        <p dir="ltr">
+                            • Whether candidates belong to a minority category
+                        </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Question Paper Language : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• English</p>
+                        <p dir="ltr">• Hindi</p>
+                        <p dir="ltr">• Gujarati</p>
+                        <p dir="ltr">• Marathi</p>
+                        <p dir="ltr">• Odia</p>
+                        <p dir="ltr">• Bengali</p>
+                        <p dir="ltr">• Assamese</p>
+                        <p dir="ltr">• Telugu</p>
+                        <p dir="ltr">• Tamil</p>
+                        <p dir="ltr">• Kannada</p>
+                        <p dir="ltr">• Malayalam</p>
+                        <p dir="ltr">• Punjabi and Urdu</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Place of Birth : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Candidate's place of Birth</p>
+                        <p dir="ltr">• State and District</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Academic Details (Class 10) : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• School Education Board</p>
+                        <p dir="ltr">• School/College Name</p>
+                        <p dir="ltr">• School/College Address</p>
+                        <p dir="ltr">• Candidate's class 10 board roll number</p>
+                        <p dir="ltr">• Candidate's year of passing</p>
+                        <p dir="ltr">• Percentage of marks obtained by candidate in Class 10</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Academic Details (Class 11) : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• School/College Name </p>
+                        <p dir="ltr">• Candidate's year of passing </p>
+                        <p dir="ltr">• School/College address and state </p>
+                        <p dir="ltr">• District of School and College is located</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Academic Details (Class 12) : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Class 12 school board, or an equivalent</p>
+                        <p dir="ltr">• Location of the School/College</p>
+                        <p dir="ltr">• School or college name (passed/appearing)</p>
+                        <p dir="ltr">• Candidate's year of passing class 12 </p>
+                        <p dir="ltr">• State where school and college is located </p>
+                        <p dir="ltr">• Year of class 12 graduation or comparable appearance</p>
+                        <p dir="ltr">• Qualifying Exam Code</p>
+                        <p dir="ltr">• Class 12 enrollment number</p>
+                        <p dir="ltr">• Percentage of class 10th marks obtained if qualified</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Choice of NEET Exam Centre : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Decide on four exam locations, ranking them in order of preference.</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Permanent Address : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Candidate's permanent address </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Details of Parents : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Occupation</p>
+                        <p dir="ltr">• Qualification</p>
+                        <p dir="ltr">• Annual income </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Security pin : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Alphabetic pins displayed on the screen </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Correspondence Address : </b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Either fill in the same as the permanent address or the address which has been
+                            filled in the current sections.</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Do you plan to present for the exam wearing a traditional outfit that is against the Dress
+                            Code?</b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">• Either yes or no</p>
+                    </div>
+                    <p dir="ltr">Check the details carefully as candidates cannot change the details once they have
+                        finally submitted the NEET application form.</p>
+                    <p dir="ltr">Click "Yes, please do" on the confirmation pop-up to submit the properly filled-out
+                        application form.</p>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Upload scanned images</h3>
+                    <p dir="ltr">
+                        →Click on “Upload your recent documents”
+                    </p>
+                    <p dir="ltr">
+                        → Select the files to be uploaded
+                    </p>
+                    <p dir="ltr">
+                        → Click on “Next”
+                    </p>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Make Payment </h3>
+                    <p dir="ltr">
+                        Choose the preferred payment method (SBI, Syndicate, HDFC, ICICI, Paytm Payment Gateway using
+                        Debit Card, Credit Card, Net-Banking, or UPI).
+                    </p>
+                    <p dir="ltr">
+                        <b>NEET Application Fees</b>
+                    </p>
+                    <p dir="ltr">
+                        Candidates wondering how to pay the fee for NEET form 2024 may take a look at the category-wise
+                        application fee mentioned in the table below:
+                    </p>
+                    <div class="table_responsive">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr"><strong>Category</strong></p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr"><strong>Application fee (In INR)</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            General
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 1,700</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            SC/ST Persons with Disability
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 1,000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            OBC
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 1,600</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Candidates outside India
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 9,500</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">
+                        Step 5 - Print Confirmation
+                    </h3>
+                    <p dir="ltr">
+                        The completed NEET application form and confirmation slip should be saved and printed.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/XTPMFyREWOs?si=HESXKqDSggy9RYP4" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="https://www.youtube.com/@Careers360" target="_blank">Careers360
+                    Youtube
+                    channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on NEET Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- Who is the competent authority to release NEET application form
+                    2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        National Testing Agency (NTA) is the competent authority to release the NEET 2024 application
+                        form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Who can register and fill the NEET 2024 form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Aspirants fulfilling the eligibility criteria can only register and fill the application form up
+                        till the NEET 2024 registration last date.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Where can one register for NEET 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Aspirants will be able to register themselves at the NEET 2024 registration website
+                        neet.ntaonline.in
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

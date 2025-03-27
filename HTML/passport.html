@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passport</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+  <style>
+    body {
+      background-color: rgb(242, 242, 242);
+    }
+
+    .emphasis:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .box1:hover {
+      transform: translateY(-5px);
+    }
+
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #home {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 100px;
+      height: 300px;
+    }
+
+    #home::before {
+      background: url("/view_all_docu_img/passportimg.jpg") no-repeat center center/cover;
+    }
+
+    .contents {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .contents li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .box2 {
+      border: 5px solid rgb(225, 235, 244);
+      background-color: rgb(225, 235, 244);
+      border-radius: 10px;
+      margin: 10px 10px;
+      padding: 5px 3px;
+    }
+
+    .image2 {
+      display: block;
+      width: 50%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .image {
+      display: block;
+
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .steps {
+      align-items: center;
+      margin: 5px 100px;
+      padding: 5px 25px;
+    }
+
+    .hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
+
+    table {
+      width: 99%;
+      background-color: white;
+      margin-left: 3px;
+    }
+
+    .steps {
+      align-items: center;
+      box-shadow: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .steps:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DocSteps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" id="list">
+              <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                  Documents</a></li>
+              <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <h1 class="heading">Passport</h1>
+  </section>
+  <section>
+    <div class="total_margin">
+      <section>
+        <div class="contents">
+          <h3>CONTENTS:</h3>
+          <ul class="ulcontents">
+            <li>
+              <a href="#voter-id-requirements">passport Requirements</a>
+            </li>
+            <li>
+              <a href="#voter-id-application">Passport Application Process</a>
+            </li>
+
+
+            <li>
+              <a href="#alternate_options">Alternate options</a>
+            </li>
+            <li>
+              <a href="#offline_appointment">What to do at offline appointment</a>
+            </li>
+            <li>
+              <a href="#Frequently-asked-questions">Frequently asked questions</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- documents reqired code -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-requirements">Passport Requirements</h2>
+          <p>
+            Before applying for a Passport, ensure you have the following
+            documents:
+          </p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>S No</th>
+                <th>Form Fields</th>
+                <th>Details Required</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Photo</td>
+                <td>One passport size photograph.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Identity proof</td>
+                <td>
+                  this could be a birth certificate, passport, driving licence,
+                  PAN Card or high school mark sheet
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Address proof</td>
+                <td>
+                  Address proof- this could be either ration card, your passport,
+                  driving license or a utility bill (phone or electricity).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>These documents are necessary for the verification process.</p>
+          <hr class="hr" />
+        </div>
+      </section>
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-application">Passport Application Process</h2>
+          <div class="steps">
+            <p id="documents">
+              Here are the detailed steps to apply for Voter ID card online:
+            </p>
+
+            <h4>&#9900; Step 1:</h4>
+            <p>
+              &nbsp;Visit the&nbsp;<a
+                href="https://portal2.passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction?request_locale=en"
+                target="_blank">Indian Government’s official Passport Seva Portal</a>.
+            </p>
+          </div>
+
+          <!-- code for step2 -->
+          <div class="steps">
+            <h4>&#9900; Step 2:</h4>
+            <p>
+              Register yourself as a new user by
+              providing your name, date of birth and email address and create your
+              own login credentials. It is mandatory for you to provide your
+              e-mail id so that you will be able to receive the registration
+              confirmation e-mail.
+            </p>
+          </div>
+
+          <!-- code for step3 -->
+          <div class="steps">
+            <h4>&#9900; Step 3:</h4>
+            <p>
+              For a detailed and personalised list of documents to be carried
+              during your appointment, visit the relevant
+              <a href="https://www.passportindia.gov.in/AppOnlineProject/docAdvisor/attachmentAdvFresh">passport seva
+                webpage</a>.
+            </p>
+          </div>
+
+          <!-- code for step4 -->
+          <div class="steps">
+            <h4>&#9900; Step 4:</h4>
+            <p>
+              &nbsp;Next, on the ‘<i>Applicant Home</i>’
+              page, click on the appropriate service among the listed, i.e. ‘Apply
+              for Fresh Passport/Re-issue of Passport.
+            </p>
+          </div>
+          <p>
+            <i><strong>For the offline form passport application process, skip to the
+                next section in this article.</strong></i>
+          </p>
+
+          <!-- code for step5 -->
+          <div class="steps">
+            <h4>&#9900; Step 5:</h4>
+            <p>
+              &nbsp; Click on the ‘<i>Click here to fill the application form online</i>’ option. The online application
+              option requires you to fill up the
+              form and complete the passport application process online.
+            </p>
+          </div>
+          <!-- code for step6 -->
+          <div class="steps">
+            <h4>&#9900; Step 6:</h4>
+            <p>
+              You will be taken to the page to select the
+              ‘Passport type’. You will have the option to apply for a fresh
+              passport or request a re-issue of the passport. You can also decide
+              whether you want a ‘Normal’ application or a fast-tracked ‘Tatkal’
+              application. Also, pick the number of pages you want on the
+              passport. 36 and 60 are the options available. Pick your options and
+              click ‘Next’.
+            </p>
+          </div>
+          <!-- code for step7 -->
+          <div class="steps">
+            <h4>&#9900; Step 7:</h4>
+            <p>
+              &nbsp;The elaborate form appears on the next
+              page. Your name, date of birth, marital status, educational
+              qualification, employment type, aadhaar number, your family’s
+              details, residential address and emergency contact details and some
+              of the details you need to fill up on the form. Fill in the details
+              and click submit.
+            </p>
+          </div>
+          <!-- code for step8 -->
+          <div class="steps">
+            <h4>&#9900; Step 8:</h4>
+            <p>
+              The next step is to schedule an
+              appointment. Online payment is mandatory for booking appointments at
+              Passport Seva Kendras (PSK).
+            </p>
+
+            <div>
+              To schedule the appointment, go to the ‘Applicant Home’ page and
+              click on ‘View Saved/Submitted Applications’. On this page, select
+              your application and then proceed to click on the ‘Payment and
+              Appointment’ tab. Click on ‘Pay and Schedule Appointment’. Check for
+              the earliest appointment available and to book an appointment on
+              this date, click pay. You can opt for payment through internet
+              banking, credit/debit cards or SBI Bank Challan. Click on the
+              payment mode you would like to use and pay the required fee
+            </div>
+          </div>
+          <!-- code for step9 -->
+          <div class="steps">
+            <h4>&#9900; Step 9:</h4>
+            <p>
+              Next, you need to ensure you have proof of appointment. After fee
+              payment, you will then be taken to the Appointment Confirmation
+              page; take a printout of these details by clicking on the ‘Print
+              Application Receipt’ link. This is not mandatory; an SMS with your
+              application details will also suffice.
+            </p>
+          </div>
+          <!-- code for step10 -->
+          <div class="steps">
+            <h4>&#9900; Step 10:</h4>
+            <p>
+              &nbsp;Visit the Passport Seva Kendra (PSK)
+              or the Regional Passport Office (RPO) on the day of your
+              appointment. It is advisable to go to the PSK an hour or so in
+              advance. You should take your originals and a set of photocopies of
+              the same documents for processing.
+            </p>
+          </div>
+
+          <hr class="hr" />
+        </div>
+      </section>
+
+      <!-- alternate option -->
+      <div>
+        <h2 id="alternate_options">An alternate option for passport application</h2>
+        <p>
+          After registering and logging in, on the ‘Applicant Home’ page, click on
+          the appropriate service among the listed, i.e. ‘Apply for Fresh
+          Passport/Re-issue of Passport.
+        </p>
+        <p>
+          Under ‘Alternative 2’ you have the option to download the soft copy of
+          the form. Your name, date of birth, marital status, educational
+          qualification, employment type, aadhaar number, your family’s details,
+          residential address and emergency contact details and some of the
+          details you need to fill up on the form. Fill in the details and click
+          ‘Validate and Save’.
+        </p>
+        <p>
+          You can come back to the ‘<a
+            href="https://portal2.passportindia.gov.in/AppOnlineProject/secure/mainFormOptions">Apply for Fresh
+            Passport/Re-issue of passport</a>’ page to upload your form.
+        </p>
+        <p>
+          Please note that you cannot take a printout of the form and fill it out.
+        </p>
+      </div>
+
+      <!-- offline appointment -->
+      <div>
+        <h2 id="offline_appointment">What happens at the Passport Seva Kendra during your appointment?</h2>
+        <ul>
+          <li>Arrive a minimum of 15 minutes early for your appointment.</li>
+          <li>
+            Ensure you have on you, all the originals of necessary documents and
+            self-attested copies.
+          </li>
+          <li>
+            Though your photograph will be taken at the PSK, you should carry two
+            recent coloured passport-size (4.5 x 3.5 cm) photographs with a white
+            background.
+          </li>
+          <li>
+            In the case of minor applicants, a person from their family will be
+            allowed to accompany them at the PSK.
+          </li>
+          <li>
+            Your documents will be checked and you will be given a paper token.
+          </li>
+          <li>
+            You will have to go through counters A, B and C in that order. Stay
+            alert and watch the token display screens which will indicate when you
+            need to approach a particular counter.
+          </li>
+          <li>
+            Your photograph will be taken and biometrics collected at one of these
+            counters.
+          </li>
+          <li>
+            Be prepared to answer all questions you are asked and speak clearly.
+          </li>
+          <li>
+            Tatkaal applicants will have to pay the balance service fee at the
+            PSK.
+          </li>
+          <li>
+            Once done, collect the acknowledgement slip from the exit counter.
+          </li>
+        </ul>
+        <p>Alongside this process, you must obtain the Police Clearance Certificate (PCC). You will be required to fill
+          out
+          the Police Clearance Certificate (PCC) Application Form online via Online Form Submission or preferably via
+          e-Form
+          Submission.</p>
+        <p>A police officer will visit you at your mentioned residence to run a background check and might call you on
+          the
+          number that you have provided for verification. So, be ready to answer the door and your phone.</p>
+      </div>
+
+
+
+
+      <div style="display: flex; flex-direction: row; justify-content: center;">
+        <iframe style="width: 90vw; height: 70vh;" src="https://www.youtube.com/embed/0xAkWbqPHwo?si=ROavA_lPLvydsH9_"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="credits">
+        <p class="credits1">Credits : <a href="https://www.youtube.com/@Govtechh" target="_blank">Govtechh Youtube
+            channel</a></p> 
+      </div>
+
+      <!-- frequently asked questions -->
+      <div>
+        <div class="box2">
+          <h2 id="faqs" class="text-center" id="Frequently-asked-questions">
+            Frequently Asked Questions on Aadhar Enrollment Form
+          </h2>
+        </div>
+
+        <div class="wrapper box2 box1">
+          <h3>
+            <span class="question">Q</span>- Why do we need a passport?
+          </h3>
+          <div class="ans">
+            <p>
+              It is proof of identity and citizenship. To prevent unauthorized and illegal entry to countries, most
+              countries rely on passports to verify who is entering and leaving the country.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- What is the fee for a passport in India?</h3>
+          <div class="ans">
+            <p>
+            <ul>
+              <li>A 36-page passport of 10 years validity will cost you 1500 rupees. If you opt for the Tatkaal
+                processing
+                of your application, you will have to pay an additional fee of 2000 rupees.</li>
+              <li>A 60-page passport of 10 years validity will cost you 2000 rupees. An additional Rs. 2000 is required
+                for
+                tatkal applications.</li>
+              <li>A passport for minors with a 5-year validity or till the minor attains the age of 18 (whichever is
+                earlier) will cost 1000 rupees. An additional Rs. 2000 is required for tatkal applications.</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- Can I apply for a passport online by myself?
+          </h3>
+          <div class="ans">
+            <p>
+              Yes, if you have all the right documents available, you can submit your online application yourself.
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- Can I make edits to my passport application after submission?</h3>
+          <div class="ans">
+            <p>
+              You can request for the changes to be made at Counter A or Citizen Service Executive to make the necessary
+              changes during your visit to the Passport Seva Kendra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

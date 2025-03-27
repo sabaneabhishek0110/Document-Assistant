@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COMEDK Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/comedk_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <p class="heading">COMEDK</p>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-COMEDK-exam">What is the Eligibility
+                            criteria for KCET?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-COMEDK-enrollment-form">What are the
+                            documents
+                            required for filling KCET form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-COMEDK-form">What is the procedure of
+                            filling KCET form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-COMEDK-exam" class="contents inner_padding">
+                <h4>COMEDK Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <!-- <li> -->
+                    <p>> The qualifying examinations prescribed for admission for B.E./B.Tech is second PUC or 10+2
+                        Higher Secondary or equivalent examination recognized by State / Central Government; the last
+                        two years of study shall comprise of Physics, Chemistry and Mathematics with English as a
+                        compulsory subject.
+                    </p>
+                    <p>> The General Merit candidates should have passed with a minimum aggregate of 45% marks (40% in
+                        respect of SC, ST and OBC candidates of Karnataka State) in Physics, Chemistry and Mathematics
+                        and should have passed these subjects individually. Physics and Mathematics are compulsory
+                        subjects along with Chemistry or Bio Technology or Biology or Computer Science or Electronics as
+                        one of the optional subjects. However, changes, if any, in the eligibility criteria by the
+                        AICTE/VTU will be adopted.</p>
+                    <p>> An attempt in the COMEDK Entrance Test seeking admission to Engineering courses is considered
+                        adequate for figuring in the rank list. However, a candidate who has obtained ‘0” (Zero) mark
+                        will not be assigned any rank.</p>
+                    <p>> Diploma candidates are not eligible to take the Entrance Test as there are no lateral entry
+                        admissions.</p>
+                    <!-- </li> -->
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-COMEDK-enrollment-form">
+                    Documents Required for COMEDK Registration form?
+                </h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    • Mobile number that you have access to for next 6-7 months</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>• E-mail id that you have access to for next 6-7 months</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>• SSLC/ 10th marks card of candidate – Max 160kb, .JPEG or .PDF format</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>• Unique govt. id proof of candidate – Max 160kb, .JPEG or .PDF format</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>• Colour passport size photo – Max 80kb, .jpg or .jpeg format</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>• Signature of the candidate on a white sheet of paper – Max 80kb, .JPG or .JPEG
+                                    format</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>• Signature of a parent on a white sheet of paper - Max 80kb, .JPG or .JPEG format
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>• Unique govt. id proof of a parent – Max 160kb, .JPEG or .PDF format</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-COMEDK-form" class="margin_to_heading" dir="ltr">
+                Step-wise Process on How to Fill COMEDK Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- COMEDK UGET Registration </h3>
+                    <p dir="ltr">
+                        Candidates must apply for the engineering entrance exam on the official website of COMEDK UGET.
+                        As a part of registration, candidates must fill in details like name, date of birth, email ID,
+                        mobile number, ID proof number as given below:
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            <b>• Name of the Applicant:</b> Candidates must enter their full Name (as it appears in
+                            their
+                            SSLC/10th Std Marks Card Only), In the case of a candidate who has changed his/ her name for
+                            any
+                            reason, the original proof of the same must be produced at the time of COMEDK admissions.
+                        </p>
+                        <p dir="ltr">
+                            <b>• Date of Birth (DOB):</b> Date of birth to be entered as per 10th /SSLC Marks card only.
+                        </p>
+                        <p dir="ltr">
+                            <b>• Email-ID:</b> Valid Email ID for all correspondence has to be entered.
+                        </p>
+                        <p dir="ltr">
+                            <b>• Mobile Number:</b> Candidates have to enter their mobile number. Enter OTP received to
+                            verify the mobile number entered.
+                        </p>
+                        <p dir="ltr">
+                            <b>• Candidate's Unique ID Proof:</b> Select the ID proof that the candidate will bring in
+                            original at the time of the exam and admission process from the list provided.
+                        </p>
+                    </div>
+
+                    <p dir="ltr">
+                        After successful registration, candidates will receive the COMEDK UGET login credentials (user
+                        ID
+                        and password) on their registered mail ID. Candidates will have to use these credentials to log
+                        in and fill COMEDK UGET application form.
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Filling COMEDK Application Form </h3>
+                    <p dir="ltr">
+                        The details candidates need to fill in the COMEDK application form are mentioned below.
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Father’s/ Guardian's Full Name
+                        </p>
+                        <p dir="ltr">
+                            • Mother’s Full Name
+                        </p>
+                        <p dir="ltr">
+                            • Date of Birth
+                        </p>
+                        <p dir="ltr">
+                            • Gender
+                        </p>
+                        <p dir="ltr">
+                            • Nationality
+                        </p>
+                        <p dir="ltr">
+                            • Candidate’s Unique Photo ID Proof Number
+                        </p>
+                        <p dir="ltr">
+                            • Parent’s/Guardian's Unique ID Proof Number
+                        </p>
+                        <p dir="ltr">
+                            • Parent’s/Guardian's Annual Income
+                        </p>
+                        <p dir="ltr">
+                            • Parent’s/Guardian's Mobile Number
+                        </p>
+                        <p dir="ltr">
+                            • Address for communication
+                        </p>
+                    </div>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Uploading of documents</h3>
+                    <p dir="ltr">
+                        After filling in all the details in the application form of COMEDK, candidates have to upload
+                        relevant documents in the application form. The documents required to be uploaded in the COMEDK
+                        application form are a recent passport-size coloured photograph, the candidate’s signature, the
+                        parents/ guardian’s signature, and unique id proof.
+                    </p>
+                </div>
+
+                <!-- code for step4 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Selecting the Preferred COMEDK Exam Centre </h3>
+                    <p dir="ltr">
+                        Here, applicants will be required to choose a minimum of three COMEDK exam centres based on
+                        their preference. The allotment of COMEDK UGET test centres will be done on the basis of the
+                        candidate’s preference. But the final decision will be made by the authorities.
+                    </p>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">
+                        Step 5 - Paying COMEDK Application Fee
+                    </h3>
+                    <p dir="ltr">
+                        The fifth step is to pay the application fee. COMEDK UGET application fee can be paid through
+                        net banking/credit card/debit card. Test takers must ensure that the online transaction for fee
+                        payment is completed, and a receipt is generated. Candidates are advised to save a copy of the
+                        fee payment acknowledgement for future reference. Take a look at the COMEDK UGET application fee
+                        below:
+                    </p>
+                    <div class="table-responsive">
+                        <div class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Programmes Applied For</th>
+                                    <th>Amount (Rs)</th>
+                                </tr>
+                                <tr>
+                                    <td>PCM/PCB (COMEDK UGET only)</td>
+                                    <td>1800 + Convenience Charges</td>
+                                </tr>
+                                <tr>
+                                    <td>PCM- Both (COMEDK and UNI-GAUGE)</td>
+                                    <td>2950 + Convenience Charges</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- code for step6 -->
+
+            <div class="txt_center inner_padding">
+                <h3 dir="ltr">Step 6 - Submitting COMEDK UGET Application Form </h3>
+                <p dir="ltr">
+                    Lastly, after filling the application form carefully, candidates have to submit their COMEDK
+                    application form. Also, candidates are advised to take a printout of the filled-in COMEDK UGET
+                    application form for future reference.
+                </p>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/CLuHKntjYRg?si=FUfuK_3fCjoa5Iwg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="http://www.youtube.com/@careerinitiative2388" target="_blank">Career Initiative Youtube
+                    channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on COMEDK Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- When will the COMEDK UGET application form be released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The authorities has released the COMEDK UGET 2024 application form in February 1, 2024.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What are the documents required to be uploaded in the COMEDK UGET
+                    application form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The documents required to be uploaded in the application form are signature of guardian and
+                        candidate, valid ID proof and photograph.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What are the details required to download the COMEDK UGET 2024
+                    admit card?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Applicants can download the COMEDK UGET admit card through their User Id and password.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How to edit comedk application form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Candidates can make corrections in the COMEDK UGET application form through the correction
+                        facility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-What is the last date to fill the COMEDK UGET 2024 application form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The last date to fill the COMEDK UGET 2024 application form is April 8, 2024.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Is COMEDK UGET easy?
+                </h3>
+                <div class="ans">
+                    <p>
+                        COMEDK is easier than JEE Mains and VITEEE.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How to fill COMEDK application form 2024
+                </h3>
+                <div class="ans">
+                    <div class="margin_to_left">
+                        <p>• COMEDK UGET Registration 2024.</p>
+                        <p>• Filling COMEDK Application Form 2024.</p>
+                        <p>• Uploading Scanned Documents.</p>
+                        <p>• Selecting the Preferred COMEDK UGET Exam Centre.</p>
+                        <p>• Paying COMEDK Application Fee 2024.</p>
+                        <p>• Submitting COMEDK UGET Application Form 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-How to fill JEE Main 2024
+                    application form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The authority has released the JEE Main 2024 application form in
+                        online mode. The application process of JEE Main comprises of
+                        registration, form filling, uploading of signature & image, fee
+                        payment, and printing of application. Candidates can read the
+                        detailed step by step process online.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

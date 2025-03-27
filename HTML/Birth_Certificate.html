@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birth Certificate</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+  <style>
+    #home::before {
+      background: url("/AllImages/birth_certificate.png") no-repeat center/cover;
+    }
+
+    body {
+      background-color: rgb(242, 242, 242);
+    }
+
+    .emphasis:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .box1:hover {
+      transform: translateY(-5px);
+    }
+
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #home {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 100px;
+      height: 300px;
+    }
+
+
+    .contents {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .contents li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .box2 {
+      border: 5px solid rgb(225, 235, 244);
+      background-color: rgb(225, 235, 244);
+      border-radius: 10px;
+      margin: 10px 10px;
+      padding: 5px 3px;
+    }
+
+    .image2 {
+      display: block;
+      width: 70%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .image {
+      display: block;
+
+      margin: 15px;
+      margin-left: 17rem;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .steps {
+      align-items: center;
+      margin: 5px 100px;
+      padding: 5px 25px;
+    }
+
+    .hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
+
+    table {
+      width: 99%;
+      background-color: white;
+      margin-left: 3px;
+    }
+
+    .steps {
+      align-items: center;
+      box-shadow: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .steps:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DocSteps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" id="list">
+              <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                  Documents</a></li>
+              <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <p class="heading">Birth Certificate</p>
+  </section>
+  <section>
+    <div class="total_margin">
+      <section>
+        <div class="contents">
+          <h3>CONTENTS:</h3>
+          <ul class="ulcontents">
+            <li>
+              <a href="#voter-id-requirements">Birth Certificate Requirements</a>
+            </li>
+            <li>
+              <a href="#voter-id-application">Birth Certificate Process</a>
+            </li>
+            <li>
+              <a href="#other_method">Applications through urban development department</a>
+            </li>
+            <li>
+              <a href="#faqs">Frequently asked questions</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- documents reqired code -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-requirements">Birth Certificate Requirements</h2>
+          <p>
+            Before applying for a Voter ID, ensure you have the following
+            documents:
+          </p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>S No</th>
+                <th>Form Fields</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Parents birtth certificate</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Marriage certificate of the parents</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Proof of birth letter in hospital</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Parent's identity proof</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>These documents are necessary for the verification process.</p>
+          <hr class="hr" />
+        </div>
+      </section>
+
+      <!-- procedure -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-application">Caste Validity Application Process</h2>
+          <div class="steps">
+            <p>
+              <span style="color: #000000">The following are the procedure for registering birth
+                online:</span>
+            </p>
+
+            <h4>&#9900; Step 1:</h4>
+            <p>
+              <span style="color: #000000">
+                Visit the
+                <span style="color: #0000ff"><a style="color: #0000ff"
+                    href="http://crsorgi.gov.in/web/index.php/auth/login">Birth and Death Registration
+                    online</a></span>&nbsp;portal for birth registration.</span>
+            </p>
+          </div>
+          <!-- code for step2 -->
+          <div class="steps">
+            <h4>&#9900; Step 2:</h4>
+            <p>
+              <span style="color: #000000">
+                The applicant needs to login to the portal for registering the
+                birth.</span>
+            </p>
+          </div>
+          <img
+            src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005802/Image-1-Maharashtra-Birth-Certificate.jpg"
+            class="image2" alt="">
+
+          <!-- code for step3 -->
+          <div class="steps">
+            <h4>&#9900; Step 3:</h4>
+            <p>
+              <span style="color: #000000">Provide all the required details and click on submit.</span>
+            </p>
+          </div>
+
+          <!-- code for step4 -->
+          <div class="steps">
+            <h4>&#9900; Step 4:</h4>
+            <p>
+              <span style="color: #000000">
+                &nbsp;In case of birth occurred in a house, click on this<span style="color: #0000ff">&nbsp;<a
+                    style="color: #0000ff"
+                    href="http://crsorgi.gov.in/web/index.php/auth/signUp">link</a>&nbsp;</span>for
+                registration.</span>
+            </p>
+          </div>
+          <img
+            src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005802/Image-2-Maharashtra-Birth-Certificate.jpg"
+            class="image2" alt="">
+
+          <!-- code for step5 -->
+          <div class="steps">
+            <h4>&#9900; Step 5:</h4>
+            <p>
+              <span style="color: #000000">
+                Download the application form and take a print out. Submit the
+                application form to the concerned Registrar.</span>
+            </p>
+          </div>
+
+          <div class="steps">
+            <h4>&#9900; Step 6:</h4>
+            <p>
+              <span style="color: #000000">After the successful submission of the application, the applicant
+                will get a confirmation mail on the registered e-mail id.</span>
+            </p>
+          </div>
+
+          <div class="steps">
+            <h4>&#9900; Step 7:</h4>
+            <p>
+              <span style="color: #000000"><strong>:</strong>&nbsp;Status of the application will be updated
+                through the mail.</span>
+            </p>
+          </div>
+
+          <div class="steps">
+            <p>
+              <span style="color: #000000">After registering the birth, the applicant can apply for a birth
+                certificate</span>
+            </p>
+          </div>
+
+          <hr class="hr" />
+
+          <!-- other method code -->
+          <div class="othermethod">
+            <h2 id="other_method">
+              <span style="color: #000000"><strong>Apply Birth Certificate through Urban Development
+                  Departments</strong></span>
+            </h2>
+            <div class="steps">
+              <h4>&#9900; Step 1:</h4>
+              <p>
+                <span style="color: #000000">
+                  Download the application form and take a print out. Submit the
+                  application form to the concerned Registrar.</span>
+              </p>
+            </div>
+
+            <h3><span style="color: #000000;"><strong>Login to the Portal</strong></span></h3>
+
+            <div class="steps">
+              <h4>&#9900; Step 2:</h4>
+              <p><span style="color: #000000;"> Select the RTS option from the main page. The link will redirect to the
+                  new
+                  page.</span></p>
+
+            </div>
+            <img
+              src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005801/Image-10-Maharashtra-Birth-Certificate.jpg"
+              class="image2" alt="">
+
+            <div class="steps">
+              <h4>&#9900; Step 3:</h4>
+              <p><span style="color: #000000;">If the applicant is a new user, then click on the register button to
+                  avail
+                  the facility provided by the aaple sarkar website.</span></p>
+            </div>
+
+            <div class="steps">
+              <h4>&#9900; Step 4:</h4>
+              <p><span style="color: #000000;"> Log in to the portal using username and password to apply for a birth
+                  certificate.</span></p>
+            </div>
+
+            <img
+              src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005801/Image-11-Maharashtra-Birth-Certificate.jpg"
+              class="image2" alt="">
+
+            <h3><span style="color: #000000;"><strong>Provide Details</strong></span></h3>
+
+            <div class="steps">
+              <h4>&#9900; Step 5:</h4>
+              <p><span style="color: #000000;"> Search for Rural development or urban development and select birth
+                  certificate option from the menu.</span></p>
+            </div>
+
+            <div class="steps">
+              <h4>&#9900; Step 6:</h4>
+              <p><span style="color: #000000;">In the new page, provide all required information for the
+                  certificate<strong>.</strong></span></p>
+            </div>
+
+            <h3><span style="color: #000000;"><strong>Make Payment</strong></span></h3>
+
+            <div class="steps">
+              <h4>&#9900; Step 7:</h4>
+              <p><span style="color: #000000;"> Check the entered details and click on the payment option. &nbsp;Once
+                  the
+                  payment is successful, the application will be forward to the concerned department.</span></p>
+            </div>
+
+            <h3><span style="color: #000000;"><strong>Status of Application</strong></span></h3>
+
+            <div class="steps">
+              <h4>&#9900; Step 8:</h4>
+              <p><span style="color: #000000;"> The applicant can check the status of the application by visiting the
+                </span>Aaple sarkar page.</p>
+
+
+            </div>
+            <img
+              src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005801/Image-12-Maharashtra-Birth-Certificate.jpg"
+              class="image2" alt="">
+          </div>
+
+        </div>
+      </section>
+
+
+      <div style="display: flex; flex-direction: row; justify-content: center;">
+        <iframe style="width: 90vw; height: 70vh;" src="https://www.youtube.com/embed/u-Kvdst6B8g?si=iOLZ1TaVWUA0_Ki5"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="credits">
+        <p class="credits1">Credits : <a href="http://www.youtube.com/@Govtechh" target="_blank">Govtechh Youtube
+            channel</a></p> 
+      </div>
+
+      <!-- frequently asked questions -->
+      <div>
+        <div class="box2">
+          <h2 id="faqs" class="text-center" id="Frequently-asked-questions">
+            Frequently Asked Questions on Aadhar Enrollment Form
+          </h2>
+        </div>
+
+        <div class="wrapper box2 box1">
+          <h3>
+            <span class="question">Q</span>- Why is it necessary
+          </h3>
+          <div class="ans">
+            <p><span style="color: #000000;">Purposes for obtaining a birth certificate are:</span></p>
+            <ul>
+              <li><span style="color: #000000;">The birth certificate is one of the important proof for applying voter
+                  ID</span></li>
+              <li><span style="color: #000000;">To get admission in an educational institution, the birth certificate is
+                  necessary</span></li>
+              <li><span style="color: #000000;">The birth certificate serves an important proof for entering military
+                  service</span></li>
+              <li><span style="color: #000000;">The birth certificate is important for settlement of <a
+                    href="https://www.indiafilings.com/learn/maharashtra-legal-heir-certificate/">inheritance</a> and
+                  property rights</span></li>
+              <li><span style="color: #000000;">To receive insurance benefits</span></li>
+              <li><span style="color: #000000;">The birth certificate needs to be submitted in some places to get a
+                  marriage
+                  certificate and prove age</span></li>
+              <li><span style="color: #000000;">For obtaining <a
+                    href="https://www.indiafilings.com/learn/driving-license/">driving licence</a> and passport in
+                  India</span></li>
+              <li><span style="color: #000000;">To receive pension and health insurance provided by the
+                  Government</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- How to register a birth?</h3>
+          <div class="ans">
+            <p><span style="color: #000000;">To obtain a birth certificate, the birth must be registered with the
+                concerned
+                local authorities within 21 days from date of occurrence.</span></p>
+            <ul>
+              <li><span style="color: #000000;">In the case of birth has taken place in a hospital or nursing homes or
+                  medical institutions, such birth has to be reported by the institutions</span></li>
+              <li><span style="color: #000000;">If any birth has taken place at home, it is responsible for the family
+                  head,
+                  or any other family member to report such births</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- What are the documents required?
+          </h3>
+          <div class="ans">
+            <p><span style="color: #000000;">Following documents are necessary for getting the Maharashtra birth
+                certificate:</span></p>
+            <ul>
+              <li><span style="color: #000000;">Identity proof of the parents for verification</span></li>
+              <li><span style="color: #000000;">Parent’s <a
+                    href="https://www.indiafilings.com/learn/maharashtra-marriage-certificate/">marriage
+                    certificate</a></span></li>
+              <li><span style="color: #000000;">Letter from the hospital – Proof of birth of the child issued by the
+                  hospital where the child is born</span></li>
+              <li><span style="color: #000000;">Parents’ birth certificate or SSC marks sheet</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- What is the time required?</h3>
+          <div class="ans">
+            <p><span style="color: #000000;">Maharashtra birth certificate will be issued within 5 days from the date of
+                application.</span></p>
+
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- What is the cost?
+          </h3>
+          <div class="ans">
+            <p><span style="color: #000000;">Rs.25 to Rs.30 is to be paid for obtaining a birth certificate in
+                Maharashtra.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

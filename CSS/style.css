@@ -1,0 +1,84 @@
+.make-larger:hover {
+    transform: scale(1.05);
+
+}
+
+.shadow-effect {
+    box-shadow: gray 0.313rem 0.313rem 0.313rem;
+}
+
+.margin-effect {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+
+.padding-effect {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/* @font-face {
+    font-family: 'Ubuntu';
+    src: url('D:/Ubuntu-Bold/Ubuntu-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('path/to/your/font/Ubuntu-Bold.ttf') format('truetype');
+    
+    font-weight: bold;
+    font-style: normal;
+} */
+body{
+    font-family: 'Ubantu',sans-serif;
+}
+
+/* You can add additional font weights and styles if needed */
+
+
+.box1 {
+    background-color: white;
+    transition: all;
+    transition-duration: 0.5s;
+
+}
+
+.box1:hover {
+    transform: translateY(-0.313rem);
+}
+
+/* body{
+    background-color: rgb(246, 236, 236)
+} */
+.emphasis:hover {
+    background-color: rgb(28, 163, 241);
+    color: black;
+    text-decoration: underline;
+    font-size: 0.938rem;
+    font-weight: bold;
+    border-radius: 0.438;
+}
+
+.box1 {
+    background-color: white;
+    transition: all;
+    transition-duration: 0.5s;
+
+}
+
+.box1:hover {
+    transform: translateY(-0.313rem);
+}
+
+.width1 {
+    width: 25%;
+
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WBJEE Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+
+        #home::before {
+            background: url("/AllImages/wbjee_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">WBJEE</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-WBJEE-exam">What is the Eligibility
+                            criteria for WBJEE?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-WBJEE-enrollment-form">What are the
+                            documents
+                            required for filling WBJEE form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-WBJEE-form">What is the procedure of
+                            filling WBJEE form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-WBJEE-exam" class="contents inner_padding">
+                <h4>WBJEE Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <p dir="ltr">
+                        <b>WBJEE Age Limit</b>
+                    </p>
+                    <p dir="ltr">
+                        WBJEE eligibility criteria age limit for the candidates appearing for WBJEE is as follows.
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • As per the criteria, the candidates should be a minimum of 17 years old as of December 31,
+                            2024.
+                        </p>
+                        <p dir="ltr">
+                            • Candidates should have been born on or before December 12, 2007. No upper WBJEE age limit.
+                        </p>
+                        <p dir="ltr">
+                            • Candidate is applying for Marine Engineering, then the candidates have to be a maximum of
+                            25 years of age as of December 31, 2024.
+                        </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>Academic Qualifications</b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Should have passed the 10+2th (or equivalent) exam conducted by a board recognized by the
+                            Central and State Governments.
+                        </p>
+                        <p dir="ltr">
+                            • Candidates should have qualified in Physics and Mathematics along with any one of the
+                            following Chemistry / Biology / Biotechnology / Computer Science / Computer Application as
+                            compulsory subjects in the qualifying exam.
+                        </p>
+                        <p dir="ltr">
+                            • The above-mentioned subjects should have also been passed individually in regular class
+                            mode (theory and practical). Candidates who will be appearing for the qualifying exam will
+                            also be considered eligible for the WBJEE 2024 exam.
+                        </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>WBJEE qualifying Marks Required</b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • General category candidates should have scored an aggregate of 45% in the three compulsory
+                            subjects in the 10+2th (or equivalent) examination.
+                        </p>
+                        <p dir="ltr">
+                            • As per WBJEE qualifying marks, reserved category candidates should have secured an
+                            aggregate of 40%.
+                        </p>
+                        <p dir="ltr">
+                            • Should have also qualified in English with a minimum 30% marks.
+                        </p>
+                    </div>
+                    <p dir="ltr">
+                        <b>WBJEE eligibility criteria for other state</b>
+                    </p>
+                    <p dir="ltr">
+                        Candidates who have not completed their class 10 or 12 from West Bengal but have a domicile can
+                        apply for the WBJEE exam.
+                    </p>
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-WBJEE-enrollment-form">
+                    Documents Required for WBJEE Application form?
+                </h2>
+                <p dir="ltr">
+                    Candidates were advised to keep the following documents and information ready with them before
+                    filling out the WBJEE application form 2024. Please note that the information entered in the
+                    application form should correspond to the documents listed below.
+                </p>
+                <div class="margin_to_left">
+                    <p dir="ltr">• Domicile Certificate</p>
+                    <p dir="ltr">• Category Certificate</p>
+                    <p dir="ltr">• Annual Family Income proof</p>
+                    <p dir="ltr">• Scholarship certificate issues from TWF (If Applicable)</p>
+                    <p dir="ltr">• JEE Main 2024 application number (if appeared for the exam)</p>
+                    <p dir="ltr">• Class 10th mark sheet</p>
+                    <p dir="ltr">• Class 12th mark sheet</p>
+                    <p dir="ltr">• Passing Certificate</p>
+                    <p dir="ltr">• Net banking/debit card/credit card details for fee payment </p>
+                </div>
+                <p dir="ltr">A scanned passport-size photograph and signature should also be kept ready as per the
+                    specifications mentioned by the official authorities.</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Documents</th>
+                                <th>Specifications</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Photograph:</b></p>
+                                    <p>Colour photo with white background</p>
+                                    <p>Mobile photos are also allowed</p>
+                                </td>
+                                <td>
+                                    <p><b>File Dimension</b> - 3.5 cm x 4.5 cm</p>
+                                    <p><b>File Size</b> - 10 to 200 KB</p>
+                                    <p><b>File Format</b> - jpg/jpeg</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><b>Signature:</b></p>
+                                    <p>Must be in black or blue ink.</p>
+                                    Must not be in Capital letters
+                                </td>
+                                <td>
+                                    <p><b>File Dimension</b> - 3.5 cm x 1.5 cm</p>
+                                    <p><b>File Size</b> - 4 to 30 KB</p>
+                                    <p><b>File Format</b> - jpg/jpeg</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-WBJEE-form" class="margin_to_heading" dir="ltr">
+                Step-wise Process on How to Fill WBJEE Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- Online WBJEE Registration </h3>
+                    <p dir="ltr">
+                        In the first step, candidates had to complete the WBJEE registration 2024 using the given
+                        steps:.
+                    </p>
+                    <div class="margin_to_left">
+                        <p>• Visit the official website at wbjee.nic.in 2024 registration</p>
+                        <p>• Click on the ‘New Registration’ link.</p>
+                        <p>• Enter details like name, father’s name, mother’s name, date of birth, gender, type of
+                            identification and contact number.</p>
+                        <p>• Enter other contact details (address, district, state, PIN code, email ID, mobile number,
+                            etc.)</p>
+                        <p>• Create a password and security question with the answer.</p>
+                        <p>• Preview the details provided during WBJEE registration and then click on ‘Submit’.</p>
+                        <p>• On successful WBJEE 2024 registration, candidates will receive an application number on the
+                            registered email and mobile number.</p>
+                    </div>
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Filling WBJEE 2024 application form </h3>
+                    <p dir="ltr">
+                        Next, candidates had to login to the WBJEE candidate portal using the application number and
+                        password and fill all the required details of the WBJEE registration form 2024. Candidates had
+                        to choose three zones of cities to be allocated as exam centres.
+                    </p>
+
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Uploading Photograph & Signature</h3>
+                    <p dir="ltr">
+                        After filling in all the details, candidates had to upload scanned images of their photograph
+                        and signature as per the specifications provided by the authorities.3
+                    </p>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Payment of Application Fee </h3>
+                    <p dir="ltr">
+                        Next, candidates need to pay the WBJEE registration form fee in online mode. Candidates have to
+                        pay Rs. 500 as WBJEE 2024 registration fees.
+                    </p>
+                    <div class="table_responsive">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr"><strong>Category</strong></p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr"><strong>WBJEE Form Fee</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            General
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            SC/ST/OBC-A/OBC-B
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Rs. 400</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">
+                        Step 5 - Printing Confirmation Page
+                    </h3>
+                    <p dir="ltr">
+                        In the last step, candidates have to download the confirmation page and take a printout of the
+                        same for future reference.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class=" txt_center inner_padding">
+            <h2>
+                WBJEE login window will look like
+            </h2>
+            <div class="container step-img">
+                <img alt="JEE Main sign in " class="fr-fic fr-dii image_format"
+                    src="https://cache.careers360.mobi/media/presets/1321X634/articles/uploads/froala_editor/images/2021/7/30/1627629560392.png">
+            </div>
+
+        </div>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/JeiGOT3ouFk?si=g3CPP6stgwV4wqNs" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="http://www.youtube.com/@TRIPATHACADEMY" target="_blank">TRI-PATH
+                    ACADEMY Youtube
+                    channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on WBJEE Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- . Is WBJEE application form 2024 released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Yes, the WBJEE 2024 application form was released on December 28, 2023.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I fill the application form of WBJEE 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        WBJEE application form 2024 was available on the official website- wbjeeb.nic.in. Candidates had
+                        to complete the registration then fill the application form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What documents are required while filling the WBJEE 2024
+                    application form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        During WBJEE application form 2024 submission, candidates had to upload scanned images of their
+                        photograph and signature as per the specifications provided by the authorities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I make corrections in the WBJEE application form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The authorities provided the WBJEE 2024 application form correction window from February 7 to 9.
+                        No corrections could be made for the Name, Father’s Name, Mother’s name, gender, domicile, and
+                        date of birth.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-I have not received my WBJEE 2024 application number through SMS,
+                    what should I do?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Applicants must enter a valid phone number at the time of registration and must have the mobile
+                        with them during the WBJEE application form 2024 process. The network connection must be good so
+                        that the SMS is received immediately.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- When WBJEE registration will start for 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        WBJEE 2024 registration commenced on December 28, 2023.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is the last date of WBJEE application form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The last date of WBJEE 2024 application form was February 5, 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

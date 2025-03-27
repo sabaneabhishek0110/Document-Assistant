@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KCET Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/kcet_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar vode -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">KCET</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-KCET-exam">What is the Eligibility
+                            criteria for KCET?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-KCET-enrollment-form">What are the
+                            documents
+                            required for filling KCET form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#flowchart-for-filling-out-the-KCET-form">KCET Application Form- Flowchart</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-KCET-form">What is the procedure of
+                            filling KCET form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-KCET-exam" class="contents inner_padding">
+                <h4>KCET Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <!-- <li> -->
+                    <p>> Candidates applying for KCET must be a citizen of India.</p>
+                    <p>> Candidate must have passed 2nd PUC/12th class or equivalent exam with English as one of the
+                        languages </p>
+                    <p>> Candidate must also have scored at least 45% marks in aggregate in Physics, Maths
+                        Chemistry/BioTechnology/Biology/Electronics/Computer</p>
+                    <p>> For SC, ST, Cat-1, 2A, 2B, 3A and 3B category candidates, the minimum marks is 40% .</p>
+                    <!-- </li> -->
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-KCET-enrollment-form">
+                    What are the documents required for KCET form?
+                </h2>
+                <p>
+                    While filling out the KCET application form, candidates have to upload the following required
+                    documents:
+                </p>
+                <h6>For all stuedents:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    • SSLC/10TH marks card
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    • 12th/2nd PUC marks card
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>• Details of studied in Karnataka</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>• Candidate's passport size photograph (Max 50 KB in JPG format)</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>• Signature of the candidate (Max 50 KB in JPG format)</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>• Left hand thumb impression of the candidate (Max 50 KB in JPG format)</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>• Reservation certificates (If any)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--Registration flowchart-->
+        <section>
+            <div class=" text-center inner_padding">
+                <h2 id="flowchart-for-filling-out-the-KCET-form" dir="ltr">
+                    KCET Application Form- Flowchart
+                </h2>
+                <div class="container step-img">
+                    <img alt="KCET sign in " class="fr-fic fr-dii image_format"
+                        src="https://cache.careers360.mobi/media/articles/uploads/froala_editor/images/2023/3/2/2_D3kPp8c.PNG">
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-KCET-form" class="margin_to_heading" dir="ltr">
+                Step-wise Process on How to Fill KCET Application Form
+            </h2>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- KCET Registration</h3>
+                    <p dir="ltr">
+                        To register for the KCET, candidates have to go to the KCET application form official website-
+                        kea.kar.nic.in and follow the given steps:
+                    </p>
+                    <!-- <p dir="ltr"> -->
+                    <div class="margin_to_left">
+                        <p>• Click on ‘New User’</p>
+                        <p>• Read the given instructions and click on ‘Proceed to apply online'</p>
+                        <p>• Select ‘Nationality’</p>
+                        <p>• 13 digit ‘Student Number’ issued from PUE Department has to be entered by the candidates
+                            who
+                            appeared for the 12th PUC exam.</p>
+                        <p>• Click on ‘Submit’</p>
+                    </div>
+                    <!-- </p> -->
+
+                    <p dir="ltr">
+                    <p>After the KCET exam registration is done, the candidates have to enter the following details KCET
+                        form:</p>
+                    </p>
+                    <div class="margin_to_left">
+                        <p>• Candidate’s name</p>
+                        <p>• Date of birth</p>
+                        <p>• Email address</p>
+                        <p>• Mobile number</p>
+                        <p>• A password of choice has to be created</p>
+                        <p>• Re-enter the password for confirmation</p>
+                        <p>• Answer the security question</p>
+                        <p>• Security code</p>
+                        <p>• Click ‘Submit’</p>
+
+                    </div>
+
+                    <p dir="ltr">
+                    <p>Candidates receive the Karnataka CET application number and User Id to their registered email ID
+                        and mobile number. It has to be kept safe since it will be used for login purposes.</p>
+                    </p>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Fee Payment </h3>
+                    <p dir="ltr">
+                        The required KCET exam application fee had to be paid in online (net banking/credit card/debit
+                        card).
+                    </p>
+                    <p dir="ltr">
+                        <b>KCET Application Fee</b>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                </tr>
+                                <tr>
+                                    <td>GM, 2A, 2B, 3A, 3B candidates of Karnataka</td>
+                                    <td>Rs. 500</td>
+                                </tr>
+                                <tr>
+                                    <td>SC/ST/CAT-1 candidates of Karnataka</td>
+                                    <td>Rs. 250</td>
+                                </tr>
+                                <tr>
+                                    <td>Applicants who studied outside Karnataka</td>
+                                    <td>Rs. 750</td>
+                                </tr>
+                                <tr>
+                                    <td>Applicants outside India</td>
+                                    <td>Rs. 5000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Filling of the KCET Form:</h3>
+                    <p dir="ltr">
+                        Next, the candidates have to fill in the required details in the CET application form as per the
+                        documents that they possess. All information has to be valid.
+                    </p>
+                    <p dir="ltr">
+                        <b>KCET Application form - Personal details required</b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p>• Nationality</p>
+                        <p>• Mother tongue</p>
+                        <p>• Religion</p>
+                        <p>• Annual income of the family(in Rs.)</p>
+                        <p>• Reservation category</p>
+                        <p>• Caste name</p>
+                        <p>• Caste/Category/Income Certificate Number (if applicable)</p>
+                        <p>• Caste List of OBC/SC/ST Category (if applicable)</p>
+                        <p>• Select eligibility clause code</p>
+                        <p>• Select the exam centres (in order of preference)</p>
+                        <p>• Details of qualifying exam like exam qualified, University/Board name, School name (if
+                            Karnataka CBSE/CISCE), whether appearing for Karnataka 2nd PUC Annual Examination (Science),
+                            PUC Student Number (if applicable)</p>
+                        <p>• Year of Passing (if applicable)</p>
+                        <p>• Eligibility to Claim Reservation or not.</p>
+                        <p>• Total Number of Completed Years of Study in Karnataka (From 1st to 12th standard)
+                        </p>
+                        <p>• Whether studied in Rural Area of Karnataka from 1st to 10th standard?- Yes/No</p>
+                        <p>• Whether studied in Kannada Medium from 1st to 10th standard?- Yes/No</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>KCET Form- Contact details to be filled.</b>
+                    </p>
+                    <div class="margin_to_left">
+                        <p>• Address</p>
+                        <p>• Name of District</p>
+                        <p>• State</p>
+                        <p>• Pin Code</p>
+                        <p>• Taluka</p>
+                        <p>• Phone Number</p>
+                        <p>• Have studied 10th standard in Karnataka or not?</p>
+                        <p>• District where the applicant appeared for 12th standard exam (if Karnataka)</p>
+                        <p>• Native State</p>
+                        <p>• Whether the applicant is Son/Daughter of a migrant from Jammu & Kashmir?</p>
+                        <p>• Whether claiming for reservation?</p>
+                        <p>• Year of Passing (if applicable)</p>
+                        <p>• Eligibility to Claim Reservation or not.</p>
+                        <p>• Total Number of Completed Years of Study in Karnataka (From 1st to 12th standard)
+                        </p>
+                        <p>• Whether studied in Rural Area of Karnataka from 1st to 10th standard?- Yes/No</p>
+                        <p>• Whether studied in Kannada Medium from 1st to 10th standard?- Yes/No</p>
+                    </div>
+                    <p dir="ltr">
+                        <b>KCET Application Form- Educational Details</b>
+                    </p>
+
+                    <div class="margin_to_left">
+                        <p>• Name of attended school/college</p>
+                        <p>• Year of passing</p>
+                        <p>• Classes studied in that particular school</p>
+                        <p>• From year of study to year of study</p>
+                    </div>
+                    <p dir="ltr">
+                        Click on ‘Save and Next’
+                    </p>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Uploading of Scanned Images</h3>
+                    <p dir="ltr">
+                        Candidates have to upload the scanned images of their photograph, signature, and left thumb
+                        impression along with their parent’s signature of left thumb impression as per the
+                        specifications mentioned by the authorities.
+                    </p>
+                </div>
+
+                <!-- code for step 5 -->
+                <div class="txt_center inner_padding">
+                    <h4 dir="ltr">
+                        Step 5 - Submission of Form
+                    </h4>
+                    <p dir="ltr">
+                        • Finally, candidates have to review all of the details submitted and corrections can be done by
+                        clicking on the ‘Edit Application Form’ button. Candidates have to accept the declaration and
+                        finally submit the KCET application form.
+                    </p>
+                    <p dir="ltr">
+                        • The printout of the KCET application form has to be attested by the School Principal or PU of
+                        the institute/school/college studied or currently studying or by any Gazetted Officer.
+                        Candidates are required to produce this attested KCET application form at the counselling
+                        session.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/A40AdNfUgSs?si=oTADcKqXGxMHq8LK" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="https://www.youtube.com/@deekshakarnataka" target="_blank">Deeksha
+                    Karnataka Youtube channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on KCET Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- Will KCET 2024 application form be available in offline mode?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No, the KCET application form 2024 ws available only in online mode.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- I made a mistake while filling the CET application form. What
+                    should I do?
+                </h3>
+                <div class="ans">
+                    <p>
+                        KEA opened the correction facility of KCET 2024 for all the registered candidates. During this
+                        period, the candidates will be able to modify and submit their KCET 2024 application form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I retrieve my forgotten KCET password?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Candidates can retrieve their password by clicking on the “Forget password” link and providing
+                        the required details such as KCET 2024 User ID, application number, security question, answer,
+                        and security code.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is the last date to apply for KCET 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The last date to apply for KCET 2024 has been extended to April 1, up to 4 PM.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-I am not able to upload the scanned documents during KCET 2024
+                    application. What should I do?
+                </h3>
+                <div class="ans">
+                    <p>
+                        All of the documents to be uploaded in the KCET 2024 application form have to be scanned
+                        according to the specifications mentioned by the official authorities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Do I have to submit the application form of KCET 2024 in offline
+                    mode?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No. Candidates don't have to submit the KCET application form 2024 in offline mode. However, the
+                        candidates will be required to download the CET application form and get it attested by the
+                        Principal of the class 12th or PU of the institute/school/college studied or where the candidate
+                        is currently studying or by any Gazetted Officer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- CHow can I pay the application fees of KCET 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Candidates can pay the application fee of KCET 2024 either through online or offline mode (bank
+                        challan).
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-What after KCET 2024 Application Form?
+                </h3>
+                <div class="ans">
+                    <p>
+                        All of the registered candidates who fulfilled the eligibility criteria will be able to download
+                        their KCET 2024 admit card. The admit card is an important document as candidates with it are
+                        not allowed to appear for the entrance exam.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

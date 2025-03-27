@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driving licence</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+  <style>
+    body {
+      background-color: rgb(242, 242, 242);
+    }
+
+    .emphasis:hover {
+      background-color: white;
+      color: black;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .box1:hover {
+      transform: translateY(-5px);
+    }
+
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+    }
+
+    #home {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 100px;
+      height: 300px;
+    }
+
+    #home::before {
+      background: url("/AllImages/Driving_Licence.jpg") no-repeat center center/cover;
+    }
+
+    .contents {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 5px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .contents li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .box2 {
+      border: 5px solid rgb(225, 235, 244);
+      background-color: rgb(225, 235, 244);
+      border-radius: 10px;
+      margin: 10px 10px;
+      padding: 5px 3px;
+    }
+
+    .image2 {
+      display: block;
+      width: 50%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .image {
+      display: block;
+
+      margin: 15px;
+      margin-left: 17rem;
+      border-radius: 10px;
+      box-shadow: 3px 3px 1px #ccc;
+    }
+
+    .steps {
+      align-items: center;
+      margin: 5px 100px;
+      padding: 5px 25px;
+    }
+
+    .hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
+
+    table {
+      width: 99%;
+      background-color: white;
+      margin-left: 3px;
+    }
+
+    .steps {
+      align-items: center;
+      box-shadow: 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .steps:hover {
+      transform: scale(1.01);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DocSteps</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Documents
+            </a>
+            <ul class="dropdown-menu" id="list">
+              <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                  Documents</a></li>
+              <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <h1 class="heading">Driving licence</h1>
+  </section>
+  <section>
+    <div class="total_margin">
+      <section>
+        <div class="contents">
+          <h3>CONTENTS:</h3>
+          <ul class="ulcontents">
+            <li>
+              <a href="#voter-id-requirements">Driving Licence Requirements</a>
+            </li>
+            <li>
+              <a href="#voter-id-application">Driving Licence Process</a>
+            </li>
+            <li>
+              <a href="#offline">Offline Procedure</a>
+            </li>
+            <li>
+              <a href="#driving-test-procedure-in-pune">Driving test procedure</a>
+            </li>
+
+            <li>
+              <a href="#faqs">Frequently asked questions</a>
+            </li>
+
+            <!-- <li>
+            <a href="#voter-id-status">Check Voter ID Application Status</a>
+          </li> -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- documents reqired code -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-requirements">Driving licence Requirements</h2>
+          <p>
+            Before applying for a driving licence, ensure you have the following
+            documents:
+          </p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>S No</th>
+                <th>Form Fields</th>
+                <th>Details Required</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Photo</td>
+                <td>One passport size photograph.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Important documents</td>
+                <td>
+                  <ul>
+                    <li>Application form</li>
+                    <li>Learner's licence</li>
+                    <li>driving school certificate</li>
+                    <li>all documents pertaining to the car being used for the driving test.</li>
+
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Identity proof</td>
+                <td>
+                  this could be a birth certificate, passport,
+                  PAN Card or high school mark sheet
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Address proof</td>
+                <td>
+                  Address proof- this could be either ration card, your passport,
+                  driving license or a utility bill (phone or electricity).
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+          <p>These documents are necessary for the verification process.</p>
+          <hr class="hr" />
+        </div>
+      </section>
+
+      <!-- procedure -->
+      <section>
+        <div class="col-md-12">
+          <h2 id="voter-id-application">Driving Licence Application Process</h2>
+
+          <p class="sc-fjdhpX sc-itybZL iMlePs">You can submit an application for DL in Pune either online or offline.
+            In
+            this section, we discuss the process involved in both methods.</p>
+
+          <h3 id="how-to-apply-for-a-driving-licence-online-in-pune" class="sc-dnqmqq sc-TFwJa kLpgvr">How to apply for
+            a
+            Driving Licence online in Pune</h3>
+
+          <p class="sc-fjdhpX sc-itybZL iMlePs">You can refer to the following steps to submit an application online for
+            a
+            Driving Licence in Pune.</p>
+          <div class="steps">
+            <ul class="sc-eMigcr gANZVY">
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 1:</b> Visit the <a
+                    href="https://parivahan.gov.in/parivahan/" aria-label="external-link"
+                    rel="noreferrer noopener nofollow" target="_blank" class="sc-fOKMvo hyqDuC"><u>Parivahan
+                      website</u></a> to access online RTO services.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 2:</b> Select “DL Related Services” by navigating to the
+                  “Online Services” menu.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 3: </b>Select the state name (Maharashtra) on the next page
+                  and
+                  click on “Apply for Learner’s Licence” (LL).</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 4:</b> Fill out the online form, upload the documents and
+                  pay
+                  the application fees to book a test slot.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 5:</b> Appear for the LL test on the designated date and
+                  receive the Learner’s Licence.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 6:</b> Now, visit the Parivahan website and select the
+                  “Apply
+                  for DL” option from the DL services menu.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 7:</b> Select the option “Holding LL” and fill out the
+                  online
+                  application for a Driving Licence and upload the relevant documents.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 8:</b> Next, select the “Appointments” option and book a
+                  slot
+                  for the driving test after 30 days of the issuance of LL.</p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 9:</b> Pay the applicable fees and print/download the
+                  acknowledgement receipt for future reference.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- offline procedure -->
+          <h3 id="offline" class="sc-dnqmqq sc-TFwJa kLpgvr">How to apply for a Driving Licence offline in Pune</h3>
+
+          <p class="sc-fjdhpX sc-itybZL iMlePs">Here are the steps to apply for DL offline in Pune.</p>
+          <div class="steps">
+
+
+            <ul class="sc-eMigcr gANZVY">
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 1:</b> Visit the RTO and obtain the LL application form
+                  (Form
+                  2). Alternatively, you can download it through the <a
+                    href="https://parivahan.gov.in/parivahan//en/content/all-forms" aria-label="external-link"
+                    rel="noreferrer noopener nofollow" target="_blank" class="sc-fOKMvo hyqDuC"><u>Parivahan
+                      website</u></a>.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 2:</b> Fill out the form and compile all the required
+                  documents.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 3: </b>Submit the application form and documents to the
+                  RTO,
+                  pay the fees, collect the acknowledgement receipt and select a slot for the Learner’s Licence test.
+                </p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 4:</b> Appear for the test and collect the LL after test
+                  clearance.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 5:</b> Next, you can pick a slot for the driving test after
+                  30
+                  days.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 6:</b> Pay the DL and test fee and collect the
+                  acknowledgement
+                  receipt.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs"><b>Step 7:</b> Appear for the driving test on the designated date
+                  at
+                  the RTO.</p>
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- test -->
+      <section>
+        <h2 id="driving-test-procedure-in-pune" class="sc-htoDjs sc-fjmCvl hShryE">Driving test procedure in Pune</h2>
+
+        <p class="sc-fjdhpX sc-itybZL iMlePs">In this section, we highlight the process involved in the driving test for
+          issuing a DL in Pune.</p>
+
+        <h3 id="driving-test-for-fourwheelers" class="sc-dnqmqq sc-TFwJa kLpgvr">Driving test for four-wheelers</h3>
+
+        <div class="steps">
+          <ul>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">A driving test for four-wheelers includes two types of tests: ground
+                and
+                road tests.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">To clear the ground test, you need to drive the vehicle on the “U”
+                and
+                “T” markings.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">The road test evaluates your driving skills in real-world road
+                conditions.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">An RTO inspector conducts and monitors the test.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">If the RTO inspector is unsatisfied with your driving skills, you
+                must
+                retake the test.</p>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="sc-dnqmqq sc-TFwJa kLpgvr">Driving test for two/three-wheelers</h3>
+
+        <div class="steps">
+          <ul>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">It includes two types of tests: ground and road tests.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">To clear the ground test, you need to ride/drive the vehicle on the
+                “8”
+                and “T” markings.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">The road test evaluates your driving skills with respect to <a
+                  href="https://www.acko.com/traffic-rules/" aria-label="internal-link" rel="" target="_blank"
+                  class="sc-fOKMvo hyqDuC">traffic rules and regulations</a>.</p>
+              </p>
+            </li>
+            <li class="sc-gPWkxV iyJWxw">
+              <p class="sc-fjdhpX sc-itybZL iMlePs">
+              <p class="sc-VigVT sc-itybZL iMlePs">If you don’t clear the test, you can apply for a retest after 7 days.
+              </p>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
+      <hr>
+      <section>
+        <h2 id="driving-licence-fees-in-pune" class="sc-htoDjs sc-fjmCvl hShryE">Driving Licence fees in Pune</h2>
+        <table class="sc-bnXvFD bTzgKr">
+          <tbody>
+            <tr>
+              <td class="sc-fhYwyz fBzuxb">Type of service </td>
+              <td class="sc-fhYwyz fBzuxb"> Fees (in Rs.)
+              </td>
+            </tr>
+            <tr>
+              <td class="sc-jzgbtB izEWag">Issuance of Learner’s Licence (LL) </td>
+              <td class="sc-jzgbtB izEWag"> 151 per vehicle class
+              </td>
+            </tr>
+            <tr>
+              <td class="sc-jzgbtB izEWag">Test for LL </td>
+              <td class="sc-jzgbtB izEWag"> 50
+              </td>
+            </tr>
+            <tr>
+              <td class="sc-jzgbtB izEWag">Issuance of Driving Licence (DL) </td>
+              <td class="sc-jzgbtB izEWag"> 716
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <br>
+
+
+
+      <div style="display: flex; flex-direction: row; justify-content: center;">
+        <iframe style="width: 90vw; height: 70vh;" src="https://www.youtube.com/embed/NjGLSH9Kxrk?si=kNLR2uriHe_ktVzt"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="credits">
+        <p class="credits1">Credits : <a href="https://www.youtube.com/@vivekanandtiwarithetraffic4454"
+            target="_blank">Vivekanand Tiwari The Traffic cop youtube channel</a></p> 
+      </div>
+
+
+      <!-- frequently asked questions -->
+      <div>
+        <div class="box2">
+          <h2 id="faqs" class="text-center" id="Frequently-asked-questions">
+            Frequently Asked Questions on Aadhar Enrollment Form
+          </h2>
+        </div>
+
+        <div class="wrapper box2 box1">
+          <h3>
+            <span class="question">Q</span>- Why is the Eligibility?
+          </h3>
+          <div class="ans">
+            <ul class="sc-eMigcr gANZVY">
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">The applicant should be 18 years of age.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">The DL application should hold a valid Learner’s Licence.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">The LL should not be older than 6 months from the date of issuance.
+                </p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">The applicant should appear for a DL test after 30 days of
+                  receiving
+                  the LL.</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">The applicant should clear the driving test.</p>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- Whar are the documents required</h3>
+          <div class="ans">
+            <ul class="sc-eMigcr gANZVY">
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Form 1 (Self-declaration of physical fitness)</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Form 1A (Medical Certificate if the applicant is above 40 years of
+                  age
+                  or for commercial vehicle DL)</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Form 2 (DL application form)</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Valid Learner’s Licence</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Age and address proof (Aadhaar card, Passport, Voter ID card, birth
+                  certificate, etc.)</p>
+                </p>
+              </li>
+              <li class="sc-gPWkxV iyJWxw">
+                <p class="sc-fjdhpX sc-itybZL iMlePs">
+                <p class="sc-VigVT sc-itybZL iMlePs">Passport-size photographs</p>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- What are the documents required?
+          </h3>
+          <div class="ans">
+            <p><span style="color: #000000;">Following documents are necessary for getting the Maharashtra birth
+                certificate:</span></p>
+            <ul>
+              <li><span style="color: #000000;">Identity proof of the parents for verification</span></li>
+              <li><span style="color: #000000;">Parent’s <a
+                    href="https://www.indiafilings.com/learn/maharashtra-marriage-certificate/">marriage
+                    certificate</a></span></li>
+              <li><span style="color: #000000;">Letter from the hospital – Proof of birth of the child issued by the
+                  hospital where the child is born</span></li>
+              <li><span style="color: #000000;">Parents’ birth certificate or SSC marks sheet</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3><span class="question">Q</span>- Is a driving test necessary?</h3>
+          <div class="ans">
+            <p>A driving test is mandatory to get a new DL in Pune.</p>
+
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- Can i apply for DL without learners licence?
+          </h3>
+          <div class="ans">
+            <p>You cannot apply for a Driving Licence without a valid LL.</p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- What happens if i do not clear exam in first attempt?
+          </h3>
+          <div class="ans">
+            <p>If you fail to clear the driving test on the first attempt, you can apply for a retest after 7 days.</p>
+          </div>
+        </div>
+
+        <div class="wrapper box1 box2">
+          <h3>
+            <span class="question">Q</span>- Is there any test to get the Learner’s licence?
+          </h3>
+          <div class="ans">
+            <p>Yes, you have to appear for a theory test to be eligible to hold a Learner’s Licence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>

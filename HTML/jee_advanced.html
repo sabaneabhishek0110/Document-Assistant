@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JEE ADVANCED Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/jee_advanced_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar vode -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <h2 class="heading">JEE ADVANCED</h2>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-JEE-ADVANCED-exam">What is the Eligibility
+                            criteria for JEE ADVANCED?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-JEE-ADVANCED-enrollment-form">What are the
+                            documents required for filling JEE ADVANCED form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-JEE-ADVANCED-form">What is the procedure of
+                            filling
+                            JEE ADVANCED form</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="contents inner_padding">
+                <h4 id="What-is-the-eligibility-criteria-for-JEE-ADVANCED-exam">JEE Advanced Eligibility:</h4>
+                <ul class="ulcontents">
+                    <li>
+                        <p>To be eligible for JEE Advanced, candidates qualifying the 10+2 with a minimum 75% mark (65%
+                            for
+                            SC / ST candidates) in Physics, Chemistry, and Mathematics. Moreover, they need to qualify
+                            for
+                            the JEE Main and be among the top 2, 50,000 candidates. Students who fulfil these criteria
+                            shall
+                            be allowed to appear for JEE Advanced.</p>
+                    </li>
+                    <li>
+                        <p>A candidate can attempt JEE (Advanced) maximum of two times in two consecutive years.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="contents inner_padding">
+                <h3>Eligibility for Foreign Candidates / OCI/PIO Candidates:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        <p>The foreign candidates and OCI.PIO candidates need to complete their education equivalent to
+                            10+2
+                            and need not write the JEE Main exam. Such candidates can apply for JEE Advanced directly.
+                            Moreover, foreign / OCI /PIO candidates need to complete other requirements too.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="inner_padding">
+                <h2 id="What-are-the-required documents-for-the-JEE-ADVANCED-enrollment-form">
+                    What are the documents required for JEE ADVANCED form?
+                </h2>
+                <p>
+                    While filing the JEE ADVANCED enrollment form following documents are
+                    required to be mentioned by you. Namely,
+                </p>
+                <h6>For all stuedents:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X certificate if the date of birth is mentioned in it OR birth certificate.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    Class XII (or equivalent examination) certificate [e.g-for those who appeared first
+                                    time
+                                    for this examination in 2023 or 2024 or whose Board declared the Class XII (or
+                                    equivalent examination) result of academic session 2021-22 on or after September 21,
+                                    2022]. If marksheet of Class XII (or equivalent examination) for 2024 is available,
+                                    then
+                                    it must be uploaded.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>If the candidate’s name is not same as in the Class X certificate, gazette
+                                    notification
+                                    showing the change of name.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>For Candidates seeking admission under the GEN-EWS category:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <td>1</td>
+                            <td>GEN-EWS certificate should have been issued on or after April 01 of the current year in
+                                consonance with the latest guidelines of the Government of India.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>If any GEN-EWS candidate fails or is unable to submit the GEN-EWS certificate at the
+                                    time of online registration, the candidate has to upload a declaration.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>For Candidates seeking admission under the OBC-NCL category:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    OBC-NCL certificate should have been issued on or after April 01 of the current year
+                                    in
+                                    consonance with the latest guidelines of the Government of India.
+                                    If any OBC-NCL candidate fails or is unable to submit the OBC-NCL certificate at the
+                                    time of online registration, the candidate has to upload a declaration.
+                                </td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>For Candidates seeking admission under the SC or ST category:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    Caste (for SC) or tribe (for ST) certificate (FORM-SC/ST), as per the latest
+                                    guidelines
+                                    of the Government of India.
+                                    If any SC/ST candidate fails or is unable to submit the SC/ST certificate at the
+                                    time of
+                                    online registration, the candidate has to upload a declaration [Declaration in Lieu
+                                    of
+                                    SC/ST Certificate] to that effect.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>For Candidates seeking admission under the PwD category:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    Physical Disability certificate (Unique Disability Identification (UDID) Certificate
+                                    or
+                                    FORM-PwD [II/III/IV, whichever is applicable]) issued by the notified medical
+                                    authority.
+                                </td>
+                            </tr>
+                            <td>2</td>
+                            <td>
+                                Dyslexic candidates need to submit FORM-DYSLEXIC-1 and FORMDYSLEXIC-2 instead of
+                                FORM-PwD. The certificate must mention ‘SEVERE’ under Dyslexia category to enable the
+                                candidate to get the benefit of PwD category.
+                            </td>
+                            </tr>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h6>For foreign nationals and OCI/PIO candidates:</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>S No</th>
+                                <th>Documents Required</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    OCI/PIO Card or Foreign Passport or Citizenship Certificate
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+        <h2 id="toc_0" dir="ltr">How to fill JEE Main 2024 Application Form?</h2>
+        <p dir="ltr">
+            The NTA-specified steps to fill out the JEE Main Application Form 2024
+            are given below. Candidates who wish to know how to fill out the JEE
+            Mains 2024 application form can refer to these easy steps.
+        </p>
+        <ul>
+            <li dir="ltr">Visit NTA/JEE Main website at jeemain.nta.ac.in.</li>
+            <li dir="ltr">Use log in to fill details in the application form.</li>
+            <li dir="ltr">
+                Uploading the photo, signature and Class 12 mark sheet.
+            </li>
+            <li dir="ltr">Verify all the details carefully.</li>
+            <li dir="ltr">Application fee payment.</li>
+            <li dir="ltr">Print out of the confirmation page.</li>
+            <li dir="ltr">Keep the confirmation page safe for reference.</li>
+        </ul>
+    </section> -->
+        <!-- <section>
+        <h2 id="imp_points" dir="ltr">
+            JEE Main 2024 Registration Form- Important Points to Consider
+        </h2>
+        <ul>
+            <li>
+                JEE Main application form for Session 2 has commenced from February 2,
+                2024.
+            </li>
+            <li dir="ltr">
+                NTA has released the JEE Main 2024 application form online on the
+                official website.
+            </li>
+            <li dir="ltr">
+                Candidates must fill the application form before the last date of
+                registration.
+            </li>
+            <li dir="ltr">
+                The deadline for submitting the JEE Main online application form is
+                March 2, 2024.
+            </li>
+            <li>
+                Students who are applying for the first time will have to complete the
+                JEE Main 2024 registration first before filling out the application
+                form for JEE Mains.
+            </li>
+            <li dir="ltr">
+                Those who do not have access to the internet can go to the nearest
+                Common Services Centre (CSC) to fill out their JEE main application
+                form 2024 for a nominal fee.
+            </li>
+            <li dir="ltr">
+                Candidates must keep their photographs and signatures ready in
+                specified dimensions to upload to the application form. The others who
+                appeared in the previous session can use the same ones they had used
+                earlier.
+            </li>
+            <li dir="ltr">
+                To avoid technical glitches, candidates are advised to use web
+                browsers like Internet Explorer 8 and above, Mozilla 3.0 and above,
+                Google Chrome 3.0
+            </li>
+            <li dir="ltr">
+                Applicants must take printouts of the application form confirmation
+                page for future reference.
+            </li>
+        </ul>
+    </section> -->
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-JEE-ADVANCED-form" dir="ltr">
+                How to fill JEE Advanced Application form?
+            </h2>
+
+            <!-- step1 code -->
+            <div class="txt_center inner_padding">
+                <h3 dir="ltr">Step 1- Login</h3>
+                <p dir="ltr">
+                    Since JEE Advanced form can be filled by candidates who qualify the JEE Main cut-off, only such
+                    candidates can register for JEE Advanced.
+                </p>
+                <p dir="ltr">
+                    • Login with JEE Main application number and password.
+
+                </p>
+                <div class="container step-img">
+                    <img alt="JEE Advanced sign in " class="fr-fic fr-dii image_format"
+                        src="https://images.shiksha.com/mediadata/images/articles/1657084848phpl1EFSe.jpeg">
+                </div>
+            </div>
+            <!-- step2 code -->
+            <div class="txt_center inner_padding">
+                <h3> Step 2: Fill registration form</h3>
+                <p dir="ltr">
+                    • Candidates have to furnish some details in the registration form. JEE Main details in the form
+                    will be
+                    prefilled from the JEE Main database.
+                </p>
+                <p dir="ltr">
+                    • Candidates have to enter entails in the form shown in the image below:
+                </p>
+                <div class="container step-img">
+                    <img alt="JEE Advanced status" class="fr-fic fr-dii image_format"
+                        src="https://images.shiksha.com/mediadata/images/articles/1657084873phppGkk6h.jpeg">
+                </div>
+            </div>
+            <!-- code for step3 -->
+            <div class="txt_center inner_padding">
+                <h3 dir="ltr">Step 3 - Upload scanned documents</h3>
+                <p dir="ltr">
+                    • Next candidates need to enter the scanned documents as per the specifications as shown below:
+                </p>
+                <div class="container step-img">
+                    <img alt="JEE Advanced document upload" class="fr-fic fr-dii image_format"
+                        src="https://images.shiksha.com/mediadata/images/articles/1657084903phpDIGPJx.jpeg">
+                </div>
+            </div>
+            <!-- code for step4 -->
+
+            <div class="txt_center inner_padding">
+                <h3 dir="ltr">Step 4 - Pay the application fee</h3>
+                <p dir="ltr">
+                    • Next, candidates have to remit the application fee as applicable. The mode of payment
+                    available is
+                    online only.
+                </p>
+
+                <div class="container step-img">
+                    <img alt="JEE Advanced 2024 payment" class="fr-fic fr-dii image_format"
+                        src="https://images.shiksha.com/mediadata/images/articles/1657084928php4dQnkD.jpeg">
+                </div>
+                <div class="txt_center">
+                    <h3 dir="ltr">
+                        JEE Advanced Application Fee for Examination Centres in India
+                    </h3>
+                </div>
+                <div dir="ltr">
+                    <div class="table_responsive">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr"><strong>Type of candidate</strong></p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr"><strong>Category of Candidates</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Indian Nationals
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Female Candidates (all categories) - INR 1600</p>
+                                        <p dir="ltr">SC, ST, PwD Candidates - INR 1600</p>
+                                        <p dir="ltr">All Other Candidates - INR 3200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Foreign Nationals
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Candidates from SAARC countries - USD 100</p>
+                                        <p dir="ltr">Candidates from SAARC countries - USD 100</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="txt_center">
+                    <h3 dir="ltr">
+                        JEE Advanced Registration Fee for Examination Centres in Foreign Countries
+                    </h3>
+                </div>
+                <div dir="ltr">
+                    <div class="table_responsive">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr"><strong>Type of candidate</strong></p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr"><strong>Category of Candidates</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            OCI/PIO card holders
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Female Candidates (GEN and GEN-PwD) - ₹ 1600
+                                        </p>
+                                        <p dir="ltr">OPEN (GEN-PwD) - ₹ 1600</p>
+                                        <p dir="ltr">OPEN (GEN) - ₹ 3200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Foreign Nationals
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">Candidates Residing in SAARC Countries - USD 100
+                                        </p>
+                                        <p dir="ltr">Candidates Residing in Non-SAARC Countries - USD 200</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- code for step 5 -->
+            <div class="txt_center">
+                <h4 dir="ltr">
+                    Step 5 - Download and print the registration receipt
+                </h4>
+
+                <p dir="ltr">
+                    • For the sake of proof of JEE Advanced registration, print the registration receipt.
+                </p>
+                <!-- payment status -->
+                <div class="container step-img">
+                    <img alt="JEE Advanced 2024 payment" class="fr-fic fr-dii image_format"
+                        src="https://images.shiksha.com/mediadata/images/articles/1657084950phpQjQeJy.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/nGabTnTUALI?si=-On1h244yVmkfwni" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="https://www.youtube.com/results?search_query=mohit+tyagi"
+                    target="_blank">Mohit Tyagi Youtube channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on JEE ADVANCED Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- I have made a mistake in the JEE Ac4dvanced 2024 application form.
+                    Can I modify the details?
+                </h3>
+                <div class="ans">
+                    <p>
+                        No. There is no provision to correct any mistakes made in the JEE Advanced application form.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I reset JEE Advanced login password?
+                </h3>
+                <div class="ans">
+                    <p>
+                        To reset the login password of JEE Advanced 2024, candidates will have to click on the forgot
+                        password option. Choose one of the options given therein and enter the asked details. A new
+                        password will be sent to the candidates.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What are the login credentials to be used to fill JEE Advanced
+                    application form 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Candidates have to use their JEE Main roll number and password to login into the JEE Advanced
+                        registration portal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is the application fee for female candidates of Indian
+                    National?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The JEE Advanced 2024 application fee for female candidates of all categories is Rs. 1600.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- Is JEE Advanced 2024 application form released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The authority will release the JEE Advanced application form 2024 online on April 21.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- When will the registration for JEE Advanced 2024 commence for
+                    Indian nationals and foreign nationals?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The registration for Indian nationals will begin on April 21, 2024, while for foreign nationals,
+                        it will commence on April 15, 2024.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

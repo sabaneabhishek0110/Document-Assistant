@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NDA Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/stepPageStyle.css">
+    <style>
+        body {
+            background-color: rgb(242, 242, 242);
+        }
+
+        .emphasis:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+            font-size: 0.938em;
+            font-weight: bold;
+            border-radius: 0.438em;
+        }
+
+        .box1 {
+            /* background-color: white; */
+            transition: all;
+            transition-duration: 0.5s;
+        }
+
+        .box1:hover {
+            transform: translateY(-0.313em);
+        }
+
+        .box2 {
+            border: 0.313em solid rgb(225, 235, 244);
+            background-color: rgb(225, 235, 244);
+            border-radius: 0.625em;
+            margin: 0.625em 0.625em;
+            padding: 0.313em 0.188em;
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.313em 6.25em;
+            height: 18.75em;
+            margin-top: 4.875em;
+        }
+
+        #home::before {
+            background: url("/AllImages/nda_logo.png") no-repeat center center/cover;
+        }
+
+        .contents {
+            border: 1px solid black;
+            border-radius: 0.625em;
+            margin: 0.313em;
+            background-color: white;
+        }
+
+        .contents li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table,
+        th,
+        td {
+            border: 0.063em solid;
+
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+        }
+
+        .image_format {
+            display: block;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.313em;
+            margin-bottom: 0.313em;
+            box-shadow: 0.688em;
+        }
+
+        .txt_center {
+            align-items: center;
+            box-shadow: 1.25em;
+            background-color: white;
+            margin: 0.625em;
+            border-radius: 0.938em;
+        }
+
+        .txt_center:hover {
+            transform: scale(1.01);
+        }
+
+        .total_margin {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        .inner_padding {
+            padding: 0.313em 1.563em 0.313em 1.563em;
+        }
+
+        .video_margin {
+            margin: 0.313em 0.625em 1.25em 0.625em;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar code -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-body-tertiary" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocSteps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link emphasis " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle emphasis" href=" #" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" id="list">
+                            <li><a class="dropdown-item emphasis" href="view_all_document.html">
+                                    Documents</a></li>
+                            <li><a class="dropdown-item emphasis" href="Exam_Forms.html">Exam Forms </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link emphasis" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- code for section after navbar -->
+    <section id="home">
+        <p class="heading">NDA</p>
+    </section>
+    <div class="total_margin">
+        <section>
+            <div class="contents inner_padding">
+                <h3>CONTENTS:</h3>
+                <ul class="ulcontents">
+                    <li>
+                        >
+                        <a href="#What-is-the-eligibility-criteria-for-NDA-exam">What is the Eligibility
+                            criteria for NDA?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-are-the-required documents-for-the-NDA-enrollment-form">What are the
+                            documents
+                            required for filling NDA form?</a>
+                    </li>
+                    <li>
+                        >
+                        <a href="#What-is-the-procedure-for-filling-out-the-NDA-form">What is the procedure of
+                            filling NDA form?</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="What-is-the-eligibility-criteria-for-NDA-exam" class="contents inner_padding">
+                <h4>NDA Eligibility Criteria:</h4>
+                <ul class="ulcontents">
+                    <p dir="ltr">
+                        <b>NDA 1 Eligibility:</b>
+                    </p>
+                    <p dir="ltr">
+                        → Candidates who have passed Class 12 can apply for the Army wing of NDA.</p>
+                    <p>→ Those who have passed
+                        Class 12 with Physics, Chemistry and Mathematics can apply for Air Force and Naval wings of NDA.
+                        Candidates who are appearing in the Class 12 can also apply.</p>
+                    </p>
+                    <p dir="ltr">
+                        <b>NDA 2 Eligibility:</b>
+                    </p>
+                    <p dir="ltr">
+                        → Both male and female candidates can apply for the exam.
+                    </p>
+                    <p dir="ltr">→ NDA 2 age limit is that candidates who are both not earlier than January 2, 2005, or
+                        later than
+                        January 1, 2008, are eligible to apply for the exam.</p>
+                    <p dir="ltr">→ For the Army Wing of NDA, candidates must have passed Class 12 or equivalent from a
+                        recognised
+                        state education board or university.</p>
+                    <p dir="ltr">→ For Air Force and Naval Wings of NDA, candidates must have passed Class 12 with
+                        Physics,
+                        Chemistry, and Mathematics.</p>
+                    <p dir="ltr">→ For the 10+2 Cadet Entry Scheme at the Indian Naval Academy, candidates must have
+                        passed Class 12
+                        or equivalent with Physics, Chemistry, and Mathematics.
+                    </p>
+                </ul>
+            </div>
+        </section>
+
+        <!--required documents-->
+        <section>
+            <div class=" txt_center inner_padding contents">
+                <h2 id="What-are-the-required documents-for-the-NDA-enrollment-form">
+                    Documents Required for NDA Application form?
+                </h2>
+                <p dir="ltr">
+                    The documents that candidates need to upload are given below:
+                </p>
+                <div class="margin_to_left">
+                    <p dir="ltr">Scanned images of photograph and signature</p>
+                    <p dir="ltr">• Photo-identity card in PDF format (Aadhar Card / Voter Card/PAN Card/ Passport/
+                        Driving License/
+                        School Photo ID/Any other photo ID Card issued by the State / Central Government)</p>
+                    <p dir="ltr">• Marksheet and admit card of Class 10 and 12</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps for registration -->
+        <section>
+            <h2 id="What-is-the-procedure-for-filling-out-the-NDA-form" class="margin_to_heading" dir="ltr">
+                Step-wise Process on How to Fill NDA Application Form
+            </h2>
+            <h3 class="margin_to_heading ">1) NDA Form : Part 1</h3>
+            <div>
+                <!-- step1 code -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 1- Candidate’s Registration </h3>
+                    <p dir="ltr">
+                        Candidates are required to enter their personal details, address, and educational
+                        qualifications. In the personal details part, candidates had to fill up their name, date of
+                        birth, father’s name, mother’s name, Aadhaar number, nationality, fee remission allowed,
+                        community, marital status, etc. There will be four options indicated by the drop-down menu to
+                        select education qualification. Candidates need to enter their complete address, email ID, and
+                        contact number.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="JEE Main sign in " class="fr-fic fr-dii image_format"
+                            src="https://images.shiksha.com/mediadata/images/articles/1641560992phpRGeZ80.jpeg">
+                    </div>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3> Step 2: Choosing the branch preferences.</h3>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            Applicants are to choose their branches: Indian Army, Air Force, and Navy
+                        </p>
+                        <p dir="ltr">
+                            Mark your preference in the order of one to four
+                        </p>
+                        <p dir="ltr">
+                            Candidates are also required to enter whether they are students of sanik/military school or
+                            son of JCO/NCO/other rank officer?
+                        </p>
+                        <p dir="ltr">
+                            Click ‘Continue’ to move to the next page
+                        </p>
+                    </div>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 3 - Verify the details</h3>
+                    <p dir="ltr">
+                        Candidates are required to verify the details entered by them in the application form. No
+                        correction is allowed after the submission of the NDA form. After verifying the details,
+                        candidates are required to agree to the terms and conditions by clicking the required checkbox.
+                    </p>
+                </div>
+
+                <!-- code for step4 -->
+
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Step 4 - Generation of registration ID </h3>
+                    <p dir="ltr">
+                        The system displays the registration ID. The page also shows other details such as name,
+                        father’s name, DOB, email id, etc. With this, the Part I registration is completed. The
+                        registration ID is also sent to the candidate’s registered email ID.
+                    </p>
+                </div>
+            </div>
+            <h3 class="margin_to_heading ">2) NDA Form : Part 2</h3>
+            <p dir="ltr" class="margin_to_heading">
+                In part II, candidates need to pay the application fees, select the exam centre, upload scanned images
+                of photographs and signatures. The steps to fill the Part II of NDA application form are given below:
+            </p>
+            <div>
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">NDA Online Form Fee:</h3>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Applicants can pay their fee through cash/credit card/debit card or net banking.
+                        </p>
+                        <p dir="ltr">
+                            • Those who opt for ‘Pay by Cash’ mode are required to take the printout of the
+                            system-generated
+                            Pay-in-slip during the Part-II registration. They are required to deposit the fee at the
+                            counter
+                            of SBI on the next working day.
+                        </p>
+                        <p dir="ltr">
+                            • Candidates should note that the fees once paid are not refunded.
+                        </p>
+                    </div>
+                    <p dir="ltr">The structure of application fee is given below:</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Fees (In INR)</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        General/OBC
+                                    </td>
+                                    <td>
+                                        100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        SC,ST, Sons of JCOs, NCOs, ORs, Women
+                                    </td>
+                                    <td>
+                                        Nil
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- step2 code -->
+
+                <div class="txt_center inner_padding">
+                    <h3>Selection of exam centre:</h3>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Candidates are required to choose NDA exam centre as per their suitability
+                        </p>
+                        <p dir="ltr">
+                            • They can choose only three exam centres
+                        </p>
+                        <p dir="ltr">
+                            • Allotment of centre will be on the first-apply-first-allot basis
+                        </p>
+                    </div>
+                </div>
+
+                <!-- code for step3 -->
+                <div class="txt_center inner_padding">
+                    <h3 dir="ltr">Uploading of photograph, signature & photo identity proof:</h3>
+                    <div class="margin_to_left">
+                        <p dir="ltr">
+                            • Candidates are required to upload the scanned images of photograph, signature, and
+                            photo-identity card
+                        </p>
+                        <p dir="ltr">
+                            • The file should not exceed 300 kb and must be less than 20 kb
+                        </p>
+                    </div>
+                    <div class="container step-img">
+                        <img alt="JEE Main sign in " class="fr-fic fr-dii image_format"
+                            src="https://images.shiksha.com/mediadata/images/articles/1577786973phpsP2eEq.jpeg">
+                    </div>
+
+                    <p dir="ltr">
+                        Before submitting the application form, candidates are required to agree to the declaration and
+                        submit the form. Candidates can view the application form by clicking View/Print button.
+                    </p>
+                    <div class="container step-img">
+                        <img alt="JEE Main sign in " class="fr-fic fr-dii image_format"
+                            src="https://images.shiksha.com/mediadata/images/articles/1577787940phpn3xqHD.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- iframe code -->
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <iframe style="width: 90vw; height: 70vh;"
+                src="https://www.youtube.com/embed/nbmqBNkIEuY?si=ix_EEB8DDwRrYMpm" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="credits">
+            <p class="credits1">Credits : <a href="http://www.youtube.com/@VishalSinghChoudhary" target="_blank">Vishal
+                    Singh Choudhary Youtube channel</a></p> 
+        </div>
+
+        <!-- frequently asked questions -->
+        <div>
+            <div class="box2">
+                <h2 id="Frequently-asked-questions" class="text-center">
+                    Frequently Asked Questions on NDA Application Form
+                </h2>
+            </div>
+            <div class="wrapper box2 box1">
+                <h3>
+                    <span class="question">Q</span>- What is the age limit to apply for the NDA exam?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Applicants between the age group of 16.5 to 19.5 years can apply for the NDA exam.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-For what posts is the NDA exam held?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The NDA recruitment exam is conducted to recruit qualified candidates as officers in the Indian
+                        Defence Services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What is the academic qualification required for the NDA exam?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The basic educational qualification required to be eligible for the NDA exam is 10+2 pass.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- What are the stages of the NDA exam?
+                </h3>
+                <div class="ans">
+                    <p>
+                        NDA Selection process has two stages, they are:
+                    </p>
+                    <div class="margin_to_left">
+                        <p>• Written exam</p>
+                        <p>• SSB interview</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-When is the NDA 1 application form 2024 to be released?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The NDA 1 registration form 2024 was released by UPSC on December 20, 2023.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- How can I apply for the NDA 2024?
+                </h3>
+                <div class="ans">
+                    <p>
+                        Applicants can apply for the NDA 2024 exam by visiting the NDA official website - upsc.gov.in.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>- When is the NDA 1 2024 exam scheduled to be held?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The NDA 1 exam 2024 will be conducted on April 21, 2024.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper box1 box2">
+                <h3>
+                    <span class="question">Q</span>-When is the NDA 2 2024 exam scheduled to be held?
+                </h3>
+                <div class="ans">
+                    <p>
+                        The NDA 2 2024 exam is scheduled to be held on September 1, 2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2023–2024 DocSteps, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
